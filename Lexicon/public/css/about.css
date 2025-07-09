@@ -1,0 +1,185 @@
+/* Custom Styles for Lexicon International School */
+
+/* === HOVER EFFECTS === */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* === ICON CIRCLES === */
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.icon-circle:hover {
+    transform: scale(1.1);
+}
+
+.icon-circle-sm {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.icon-circle-sm:hover {
+    transform: scale(1.1);
+}
+
+.icon-circle-lg {
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s ease;
+}
+
+.icon-circle-lg:hover {
+    transform: scale(1.05);
+}
+
+/* === BUTTON ANIMATIONS === */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* === SECTION STYLING === */
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .icon-circle {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .icon-circle-lg {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .icon-circle-sm {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* === ADDITIONAL UTILITIES === */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.box-shadow-soft {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* === CUSTOM BADGE STYLING === */
+.badge.rounded-pill {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* === ANTHEM TEXT STYLING === */
+.anthem-text em {
+    font-style: italic;
+    line-height: 1.8;
+}
+
+/* === SMOOTH SCROLL === */
+html {
+    scroll-behavior: smooth;
+}
+.image-overlay {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+        
+        .image-overlay::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(0,123,255,0.8), rgba(40,167,69,0.6));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+        
+        .image-overlay:hover::before {
+            opacity: 1;
+        }
+        
+        .image-overlay img {
+            transition: transform 0.3s ease;
+        }
+        
+        .image-overlay:hover img {
+            transform: scale(1.05);
+        }
+        
+        .overlay-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 2;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .image-overlay:hover .overlay-content {
+            opacity: 1;
+        }
+        
+        .gallery-image {
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .feature-image {
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        
+        .parallax-section {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .parallax-overlay {
+            background: rgba(0,0,0,0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
