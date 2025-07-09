@@ -90,67 +90,100 @@
         </div>
     </section>
 
-    <!-- Academic Programs -->
-    <section class="programs py-5" id="programs">
-        <div class="container">
-            <h2 class="text-center mb-3 display-5 fw-bold">Academic Programs</h2>
-            <p class="text-center text-muted mb-5">Comprehensive educational pathways designed to unlock every student's potential</p>
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-header bg-primary text-white py-4">
-                            <h3 class="h5 mb-1">Primary Education</h3>
-                            <p class="mb-0 opacity-75">Foundation years (Ages 5-11)</p>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <h3 class="h5 mb-3 text-primary">Primary Program</h3>
-                            <p class="flex-grow-1">Building strong foundations in literacy, numeracy, and critical thinking through engaging, hands-on learning experiences.</p>
-                            <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a>
+<!-- Academic Programs -->
+<section class="programs py-5" id="programs">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <p class="text-muted mb-2">Comprehensive education from foundation to advanced levels</p>
+                <h2 class="display-5 fw-bold mb-3">Academic Programs</h2>
+                <p class="text-muted">Advanced curriculum preparing students for higher education Specialized programs for university preparation Hands-on learning with focus on real-world applications</p>
+                <a href="#" class="btn btn-outline-primary">READ MORE</a>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Primary Education -->
+        <div class="program-card">
+            <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
+            <div class="program-overlay red-overlay">
+                <div class="program-content">
+                    <div class="program-number">1</div>
+                    <h3 class="program-title">Primary Education</h3>
+                    <p class="program-subtitle">Building strong foundations...</p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> Literacy & Numeracy</li>
+                    </ul>
+                    <a href="#" class="btn btn-warning btn-sm">Read more</a>
+                </div>
+            </div>
+        </div>
+            
+            <!-- Secondary Education -->
+            <div class="col-lg-6">
+                <div class="program-card">
+                    <div class="program-bg secondary-bg"></div>
+                    <div class="program-overlay blue-overlay">
+                        <div class="program-content">
+                            <div class="program-number">2</div>
+                            <h3 class="program-title">Secondary Education</h3>
+                            <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
+                            <ul class="program-features">
+                                <li><i class="fas fa-check"></i> Core Academic Excellence</li>
+                                <li><i class="fas fa-check"></i> Character Development</li>
+                                <li><i class="fas fa-check"></i> Science & Social Studies</li>
+                                <li><i class="fas fa-check"></i> Arts & Physical Education</li>
+                            </ul>
+                            <a href="#" class="btn btn-warning btn-sm">Read more</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-header bg-success text-white py-4">
-                            <h3 class="h5 mb-1">Secondary Education</h3>
-                            <p class="mb-0 opacity-75">Advanced learning (Ages 12-16)</p>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <h3 class="h5 mb-3 text-success">Secondary Program</h3>
-                            <p class="flex-grow-1">Comprehensive curriculum preparing students for higher education with specialized tracks in sciences, humanities, and arts.</p>
-                            <a href="#" class="btn btn-outline-success mt-auto">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-header bg-info text-white py-4">
-                            <h3 class="h5 mb-1">International Baccalaureate</h3>
-                            <p class="mb-0 opacity-75">Global certification (Ages 16-18)</p>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <h3 class="h5 mb-3 text-info">IB Diploma</h3>
-                            <p class="flex-grow-1">Internationally recognized program developing inquiring, knowledgeable, and caring young people.</p>
-                            <a href="#" class="btn btn-outline-info mt-auto">Learn More</a>
+            </div>
+            
+            <!-- Advanced Level -->
+            <div class="col-lg-6">
+                <div class="program-card">
+                    <div class="program-bg advanced-bg"></div>
+                    <div class="program-overlay dark-overlay">
+                        <div class="program-content">
+                            <div class="program-number">3</div>
+                            <h3 class="program-title">Advanced Level</h3>
+                            <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
+                            <ul class="program-features">
+                                <li><i class="fas fa-check"></i> University Preparation</li>
+                                <li><i class="fas fa-check"></i> Advanced Coursework</li>
+                                <li><i class="fas fa-check"></i> Research Projects</li>
+                                <li><i class="fas fa-check"></i> Critical Thinking Skills</li>
+                            </ul>
+                            <a href="#" class="btn btn-warning btn-sm">Read more</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-header bg-warning text-dark py-4">
-                            <h3 class="h5 mb-1">STEM Excellence</h3>
-                            <p class="mb-0 opacity-75">Science & Technology focus</p>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <h3 class="h5 mb-3 text-warning">STEM Program</h3>
-                            <p class="flex-grow-1">Advanced science, technology, engineering, and mathematics education with state-of-the-art facilities and research opportunities.</p>
-                            <a href="#" class="btn btn-outline-warning mt-auto">Learn More</a>
+            </div>
+            
+            <!-- Advanced Level 2 -->
+            <div class="col-lg-6">
+                <div class="program-card">
+                    <div class="program-bg advanced2-bg"></div>
+                    <div class="program-overlay orange-overlay">
+                        <div class="program-content">
+                            <div class="program-number">4</div>
+                            <h3 class="program-title">Advanced Level</h3>
+                            <p class="program-subtitle">Specialized training with focus on advanced concepts and practical applications</p>
+                            <ul class="program-features">
+                                <li><i class="fas fa-check"></i> Specialized Subjects</li>
+                                <li><i class="fas fa-check"></i> Practical Applications</li>
+                                <li><i class="fas fa-check"></i> Higher Mathematics</li>
+                                <li><i class="fas fa-check"></i> Science & Social Studies</li>
+                            </ul>
+                            <a href="#" class="btn btn-warning btn-sm">Read more</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 @endsection
 
 @section('styles')
