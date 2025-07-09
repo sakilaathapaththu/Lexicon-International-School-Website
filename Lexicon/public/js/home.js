@@ -1,5 +1,33 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for navigation links
+document.addEventListener('DOMContentLoaded', function () {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.hero-dot');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentSlide = index;
+            showSlide(currentSlide);
+        });
+    });
+
+    setInterval(nextSlide, 5000);
+    showSlide(0);
+
+    // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -13,36 +41,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Animate stats on scroll
-    const observerOptions = {
-        threshold: 0.5,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const statNumber = entry.target.querySelector('.stat-number');
-                const finalNumber = parseInt(statNumber.textContent);
-                animateNumber(statNumber, finalNumber);
-            }
+    // Parallax scroll
+    window.addEventListener('scroll', function () {
+        const scrolled = window.pageYOffset;
+        const heroSlides = document.querySelectorAll('.hero-slide');
+        heroSlides.forEach(slide => {
+            slide.style.transform = `translateY(${scrolled * 0.5}px)`;
         });
-    }, observerOptions);
-
-    document.querySelectorAll('.stat-card').forEach(card => {
-        observer.observe(card);
     });
-
-    function animateNumber(element, target) {
-        let current = 0;
-        const increment = target / 50;
-        const timer = setInterval(() => {
-            current += increment;
-            if (current >= target) {
-                current = target;
-                clearInterval(timer);
-            }
-            element.textContent = Math.floor(current) + (element.textContent.includes('+') ? '+' : '') + (element.textContent.includes('%') ? '%' : '');
-        }, 30);
-    }
 });
