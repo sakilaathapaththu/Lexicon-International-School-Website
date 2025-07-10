@@ -19,6 +19,11 @@ Route::get('/', function () {
 });
 
 
+Route::get('/about', function () {
+    return view('components.about');
+});
+
+
 // Admin Login Routes (public)
 Route::get('/admin/login', [AdminLoginController::class, 'showLoginForm'])->name('admin.login');
 Route::post('/admin/login', [AdminLoginController::class, 'login']);
@@ -34,3 +39,4 @@ Route::middleware('auth:admin')->prefix('admin')->group(function () {
     // Add other admin-only pages here
     // Route::get('/settings', ...);
 });
+
