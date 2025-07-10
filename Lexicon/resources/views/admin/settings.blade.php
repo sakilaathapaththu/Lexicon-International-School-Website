@@ -119,6 +119,7 @@
             <th>Email</th>
             <th>Role</th>
             <th>Status</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -130,8 +131,77 @@
                 <td>{{ $a->email }}</td>
                 <td>{{ $a->role }}</td>
                 <td>{{ $a->status ? 'Active' : 'Inactive' }}</td>
+                <td>
+                    <!-- Edit Button -->
+                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#editAdminModal{{ $a->id }}">✏️</button>
+
+                    <!-- Delete Form -->
+                    <form action="{{ route('admin.delete', $a->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Are you sure?');">
+                        @csrf
+                        @method('DELETE')
+                        <button class="btn btn-sm btn-danger">🗑️</button>
+                    </form>
+                </td>
             </tr>
+
+            <!-- Modal for Edit Admin -->
+            <div class="modal fade" id="editAdminModal{{ $a->id }}" tabindex="-1" aria-labelledby="editAdminLabel{{ $a->id }}" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <form action="{{ route('admin.update', $a->id) }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        @method('PUT')
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="editAdminLabel{{ $a->id }}">Edit Admin - {{ $a->username }}</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body row">
+                                <div class="col-md-6 mb-2">
+                                    <label>Username</label>
+                                    <input type="text" name="username" value="{{ $a->username }}" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label>Full Name</label>
+                                    <input type="text" name="fullName" value="{{ $a->fullName }}" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label>Email</label>
+                                    <input type="email" name="email" value="{{ $a->email }}" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label>Phone</label>
+                                    <input type="text" name="phone" value="{{ $a->phone }}" class="form-control">
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label>Role</label>
+                                    <select name="role" class="form-control" required>
+                                        <option value="editor" {{ $a->role == 'editor' ? 'selected' : '' }}>Editor</option>
+                                        <option value="superadmin" {{ $a->role == 'superadmin' ? 'selected' : '' }}>Superadmin</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label>Profile Image</label>
+                                    <input type="file" name="profileImage" class="form-control">
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label>New Password</label>
+                                    <input type="password" name="password" class="form-control">
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label>Confirm Password</label>
+                                    <input type="password" name="password_confirmation" class="form-control">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success">Update</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         @endforeach
     </tbody>
 </table>
+
 @endsection

@@ -15,6 +15,8 @@ class SuperAdminOnly
             return $next($request);
         }
 
-        return abort(403, 'Unauthorized');
+        return redirect()
+            ->route('admin.dashboard')
+            ->with('error', 'Access denied. Only superadmins can access this page.');
     }
 }

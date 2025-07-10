@@ -31,9 +31,9 @@ class AdminController extends Controller
         $admin->fullName = $request->fullName;
 
         if ($request->hasFile('profileImage')) {
-            $path = $request->file('profileImage')->store('profile_images', 'public');
-            $admin->profileImage = "/storage/" . $path;
+            $profileImage = 'storage/' . $request->file('profileImage')->store('profile_images', 'public');
         }
+
 
         if ($request->filled('password')) {
             $admin->password = Hash::make($request->password);
