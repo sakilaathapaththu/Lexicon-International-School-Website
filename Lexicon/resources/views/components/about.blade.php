@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{ asset('css/about.css') }}">
 </head>
 <body>
-    <!-- Hero Section -->
+<!-- Hero Section -->
     <section class="bg-primary text-white py-5">
         <div class="container">
             <div class="row align-items-center">
@@ -45,7 +45,7 @@
             <div class="row g-4">
                 <div class="col-lg-8">
                     <div class="image-overlay" data-aos="fade-right" data-aos-delay="200">
-                        <img src="{{ asset('images/school/main-building.jpg') }}" alt="Main School Building" class="img-fluid gallery-image w-100">
+                        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=300&fit=crop&crop=center" alt="Main School Building" class="img-fluid gallery-image w-100">
                         <div class="overlay-content">
                             <h4 class="fw-bold">Main Academic Building</h4>
                             <p class="mb-0">Modern classrooms with smart technology</p>
@@ -54,14 +54,14 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="image-overlay mb-3" data-aos="fade-left" data-aos-delay="300">
-                        <img src="{{ asset('images/school/library.jpg') }}" alt="School Library" class="img-fluid gallery-image w-100">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop&crop=center" alt="School Library" class="img-fluid gallery-image w-100">
                         <div class="overlay-content">
                             <h5 class="fw-bold">Digital Library</h5>
                             <p class="mb-0 small">Extensive collection & study spaces</p>
                         </div>
                     </div>
                     <div class="image-overlay" data-aos="fade-left" data-aos-delay="400">
-                        <img src="{{ asset('images/school/cafeteria.jpg') }}" alt="School Cafeteria" class="img-fluid gallery-image w-100">
+                        <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=300&h=200&fit=crop&crop=center" alt="School Cafeteria" class="img-fluid gallery-image w-100">
                         <div class="overlay-content">
                             <h5 class="fw-bold">Modern Cafeteria</h5>
                             <p class="mb-0 small">Healthy meals & social spaces</p>
@@ -117,7 +117,7 @@
                 <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                     <div class="card border-0 shadow-sm h-100 hover-lift">
                         <div class="image-overlay">
-                            <img src="{{ asset('images/school/science-lab.jpg') }}" alt="Science Laboratory" class="card-img-top feature-image">
+                            <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop&crop=center" alt="Science Laboratory" class="card-img-top feature-image">
                             <div class="overlay-content">
                                 <h5 class="fw-bold">Science Labs</h5>
                                 <p class="mb-0 small">Advanced equipment for hands-on learning</p>
@@ -132,7 +132,7 @@
                 <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
                     <div class="card border-0 shadow-sm h-100 hover-lift">
                         <div class="image-overlay">
-                            <img src="{{ asset('images/school/computer-lab.jpg') }}" alt="Computer Laboratory" class="card-img-top feature-image">
+                            <img src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=300&h=200&fit=crop&crop=center" alt="Computer Laboratory" class="card-img-top feature-image">
                             <div class="overlay-content">
                                 <h5 class="fw-bold">IT Center</h5>
                                 <p class="mb-0 small">Latest technology & software</p>
@@ -147,7 +147,7 @@
                 <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
                     <div class="card border-0 shadow-sm h-100 hover-lift">
                         <div class="image-overlay">
-                            <img src="{{ asset('images/school/sports-complex.jpg') }}" alt="Sports Complex" class="card-img-top feature-image">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop&crop=center" alt="Sports Complex" class="card-img-top feature-image">
                             <div class="overlay-content">
                                 <h5 class="fw-bold">Sports Complex</h5>
                                 <p class="mb-0 small">Multi-purpose athletic facilities</p>
@@ -210,7 +210,6 @@
             </div>
         </div>
     </section>
-
     <!-- Student Life Gallery Section -->
     <section class="py-5 bg-light">
         <div class="container">
@@ -221,7 +220,7 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="200">
                     <div class="image-overlay">
-                        <img src="{{ asset('images/school/classroom.jpg') }}" alt="Interactive Classroom" class="img-fluid gallery-image w-100">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop&crop=faces,center" alt="Interactive Classroom" class="img-fluid gallery-image w-100">
                         <div class="overlay-content">
                             <h5 class="fw-bold">Interactive Learning</h5>
                             <p class="mb-0 small">Engaging classroom experiences</p>
@@ -230,7 +229,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="300">
                     <div class="image-overlay">
-                        <img src="{{ asset('images/school/students-studying.jpg') }}" alt="Students Studying" class="img-fluid gallery-image w-100">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&crop=faces,center" alt="Students Studying" class="img-fluid gallery-image w-100">
                         <div class="overlay-content">
                             <h5 class="fw-bold">Collaborative Learning</h5>
                             <p class="mb-0 small">Students working together</p>
@@ -239,7 +238,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="slide-up" data-aos-delay="400">
                     <div class="image-overlay">
-                        <img src="{{ asset('images/school/extracurricular.jpg') }}" alt="Extracurricular Activities" class="img-fluid gallery-image w-100">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center" alt="Extracurricular Activities" class="img-fluid gallery-image w-100">
                         <div class="overlay-content">
                             <h5 class="fw-bold">Extracurricular</h5>
                             <p class="mb-0 small">Arts, sports & clubs</p>
@@ -251,7 +250,7 @@
     </section>
 
     <!-- Parallax Section with Background Image -->
-    <section class="parallax-section py-5 text-white" style="background-image: url('{{ asset('images/school/campus-aerial.jpg') }}');" data-aos="fade-in">
+    <section class="parallax-section py-5 text-white" style="background-image: url('https://images.unsplash.com/photo-1562774053-701939374585?w=1200&h=600&fit=crop&crop=center');" data-aos="fade-in">
         <div class="parallax-overlay"></div>
         <div class="container position-relative">
             <div class="row text-center">
@@ -389,28 +388,28 @@
             <div class="row text-center g-4">
                 <div class="col-lg-3 col-md-6">
                     <div class="mb-3" data-aos="fade-up" data-aos-delay="100">
-                        <i class="fas fa-users mb-3" style="font-size: 3rem;"></i>
+                        <i class="fas fa-users stats-icon"></i>
                         <h2 class="display-4 fw-bold">1,200+</h2>
                         <p class="lead mb-0">Students</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="mb-3" data-aos="fade-up" data-aos-delay="200">
-                        <i class="fas fa-chalkboard-teacher mb-3" style="font-size: 3rem;"></i>
+                        <i class="fas fa-chalkboard-teacher stats-icon"></i>
                         <h2 class="display-4 fw-bold">80+</h2>
                         <p class="lead mb-0">Expert Faculty</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="mb-3" data-aos="fade-up" data-aos-delay="300">
-                        <i class="fas fa-globe mb-3" style="font-size: 3rem;"></i>
+                        <i class="fas fa-globe stats-icon"></i>
                         <h2 class="display-4 fw-bold">25+</h2>
                         <p class="lead mb-0">Nationalities</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="mb-3" data-aos="fade-up" data-aos-delay="400">
-                        <i class="fas fa-award mb-3" style="font-size: 3rem;"></i>
+                        <i class="fas fa-award stats-icon"></i>
                         <h2 class="display-4 fw-bold">15+</h2>
                         <p class="lead mb-0">Years of Excellence</p>
                     </div>
@@ -419,7 +418,7 @@
         </div>
     </section>
 
-    <!-- Leadership Section -->
+    <!-- Leadership Section
     <section class="py-5">
         <div class="container">
             <div class="text-center mb-5">
@@ -430,9 +429,8 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="card border-0 shadow-sm text-center hover-lift">
                         <div class="card-body p-4">
-                            <div class="bg-light rounded-circle p-4 d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
-                                <i class="fas fa-user-tie text-primary fs-1"></i>
-                            </div>
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" 
+                                alt="Dr. Sarah Johnson" class="leadership-img">
                             <h5 class="card-title text-primary fw-bold">Dr. Sarah Johnson</h5>
                             <p class="text-muted mb-2 fw-medium">Principal</p>
                             <p class="card-text small text-muted">Educational leader with 20+ years of experience in international education and curriculum development.</p>
@@ -442,9 +440,8 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="card border-0 shadow-sm text-center hover-lift">
                         <div class="card-body p-4">
-                            <div class="bg-light rounded-circle p-4 d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
-                                <i class="fas fa-user-graduate text-primary fs-1"></i>
-                            </div>
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                alt="Prof. Michael Chen" class="leadership-img">
                             <h5 class="card-title text-primary fw-bold">Prof. Michael Chen</h5>
                             <p class="text-muted mb-2 fw-medium">Academic Director</p>
                             <p class="card-text small text-muted">Renowned educator specializing in innovative teaching methodologies and student assessment strategies.</p>
@@ -454,9 +451,8 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="card border-0 shadow-sm text-center hover-lift">
                         <div class="card-body p-4">
-                            <div class="bg-light rounded-circle p-4 d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
-                                <i class="fas fa-user-friends text-primary fs-1"></i>
-                            </div>
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1561&q=80" 
+                                alt="Ms. Emma Thompson" class="leadership-img">
                             <h5 class="card-title text-primary fw-bold">Ms. Emma Thompson</h5>
                             <p class="text-muted mb-2 fw-medium">Student Affairs Director</p>
                             <p class="card-text small text-muted">Dedicated professional focusing on student wellbeing, counseling, and extracurricular development.</p>
@@ -465,7 +461,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- School Events Gallery Section -->
     <section class="py-5 bg-light">
@@ -477,7 +473,8 @@
             <div class="row g-4">
                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                     <div class="image-overlay">
-                        <img src="{{ asset('images/school/graduation-ceremony.jpg') }}" alt="Graduation Ceremony" class="img-fluid gallery-image w-100">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                            alt="Graduation Ceremony" class="img-fluid event-img w-100">
                         <div class="overlay-content">
                             <h5 class="fw-bold">Graduation Ceremony</h5>
                             <p class="mb-0 small">Celebrating achievements & new beginnings</p>
@@ -488,7 +485,8 @@
                     <div class="row g-3">
                         <div class="col-12" data-aos="fade-left" data-aos-delay="300">
                             <div class="image-overlay">
-                                <img src="{{ asset('images/school/science-fair.jpg') }}" alt="Science Fair" class="img-fluid gallery-image w-100" style="height: 120px;">
+                                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                    alt="Science Fair" class="img-fluid small-event-img w-100">
                                 <div class="overlay-content">
                                     <h6 class="fw-bold">Science Fair</h6>
                                     <p class="mb-0 small">Innovation showcase</p>
@@ -497,7 +495,8 @@
                         </div>
                         <div class="col-12" data-aos="fade-left" data-aos-delay="400">
                             <div class="image-overlay">
-                                <img src="{{ asset('images/school/cultural-festival.jpg') }}" alt="Cultural Festival" class="img-fluid gallery-image w-100" style="height: 120px;">
+                                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" 
+                                    alt="Cultural Festival" class="img-fluid small-event-img w-100">
                                 <div class="overlay-content">
                                     <h6 class="fw-bold">Cultural Festival</h6>
                                     <p class="mb-0 small">Celebrating diversity</p>
@@ -516,7 +515,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
                     <div class="image-overlay">
-                        <img src="{{ asset('images/school/happy-students.jpg') }}" alt="Happy Students" class="img-fluid gallery-image w-100">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" 
+                            alt="Happy Students" class="img-fluid cta-img w-100">
                         <div class="overlay-content">
                             <h5 class="fw-bold">Join Our Family</h5>
                             <p class="mb-0 small">Your educational journey starts here</p>
@@ -551,7 +551,7 @@
     </section>
 
     <!-- Virtual Tour Section -->
-    <section class="py-5 bg-light">
+    <!-- <section class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="display-5 fw-bold text-primary mb-3" data-aos="fade-up">Take a Virtual Tour</h2>
@@ -561,7 +561,8 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="card border-0 shadow-sm hover-lift">
                         <div class="image-overlay">
-                            <img src="{{ asset('images/school/virtual-tour-1.jpg') }}" alt="Virtual Tour - Classrooms" class="card-img-top" style="height: 200px; object-fit: cover;">
+                            <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" 
+                                alt="Smart Classrooms" class="virtual-tour-img w-100">
                             <div class="overlay-content">
                                 <h5 class="fw-bold">Smart Classrooms</h5>
                                 <p class="mb-0 small">Interactive learning spaces</p>
@@ -577,7 +578,8 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="card border-0 shadow-sm hover-lift">
                         <div class="image-overlay">
-                            <img src="{{ asset('images/school/virtual-tour-2.jpg') }}" alt="Virtual Tour - Labs" class="card-img-top" style="height: 200px; object-fit: cover;">
+                            <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                alt="Research Labs" class="virtual-tour-img w-100">
                             <div class="overlay-content">
                                 <h5 class="fw-bold">Research Labs</h5>
                                 <p class="mb-0 small">Advanced scientific equipment</p>
@@ -593,7 +595,8 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                     <div class="card border-0 shadow-sm hover-lift">
                         <div class="image-overlay">
-                            <img src="{{ asset('images/school/virtual-tour-3.jpg') }}" alt="Virtual Tour - Campus" class="card-img-top" style="height: 200px; object-fit: cover;">
+                            <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1586&q=80" 
+                                alt="Campus Grounds" class="virtual-tour-img w-100">
                             <div class="overlay-content">
                                 <h5 class="fw-bold">Campus Grounds</h5>
                                 <p class="mb-0 small">Beautiful outdoor spaces</p>
@@ -603,6 +606,58 @@
                             <a href="#" class="btn btn-primary btn-sm">
                                 <i class="fas fa-play me-2"></i>Start Tour
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Additional School Life Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary mb-3" data-aos="fade-up">More From Our School Life</h2>
+                <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">Capturing the essence of our educational community</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="image-overlay">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1322&q=80" 
+                            alt="Library Study" class="img-fluid gallery-image w-100" style="height: 200px;">
+                        <div class="overlay-content">
+                            <h6 class="fw-bold">Modern Library</h6>
+                            <p class="mb-0 small">Quiet study spaces</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="image-overlay">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                            alt="Sports Activities" class="img-fluid gallery-image w-100" style="height: 200px;">
+                        <div class="overlay-content">
+                            <h6 class="fw-bold">Sports Complex</h6>
+                            <p class="mb-0 small">Athletic excellence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="image-overlay">
+                        <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" 
+                            alt="Art Studio" class="img-fluid gallery-image w-100" style="height: 200px;">
+                        <div class="overlay-content">
+                            <h6 class="fw-bold">Art Studio</h6>
+                            <p class="mb-0 small">Creative expression</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="image-overlay">
+                        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                            alt="Cafeteria" class="img-fluid gallery-image w-100" style="height: 200px;">
+                        <div class="overlay-content">
+                            <h6 class="fw-bold">Cafeteria</h6>
+                            <p class="mb-0 small">Nutritious meals</p>
                         </div>
                     </div>
                 </div>
