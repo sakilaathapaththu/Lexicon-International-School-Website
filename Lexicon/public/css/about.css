@@ -315,3 +315,189 @@ html {
             border-radius: 10px;
             transition: transform 0.3s ease;
         }
+        
+.parallax-section {
+            position: relative;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .parallax-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(74, 144, 226, 0.8), rgba(80, 200, 120, 0.8));
+            z-index: 1;
+        }
+        
+        .parallax-section .container {
+            z-index: 2;
+        }
+        
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        /* Modal Styles */
+        .story-modal .modal-dialog {
+            max-width: 900px;
+        }
+        
+        .story-modal .modal-content {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        }
+        
+        .story-modal .modal-header {
+            background: linear-gradient(135deg, #4a90e2, #50c878);
+            color: white;
+            border: none;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .story-modal .modal-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        
+        .story-modal .btn-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            opacity: 1;
+        }
+        
+        .story-modal .btn-close:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+        
+        .story-modal .modal-body {
+            padding: 0;
+        }
+        
+        .story-content {
+            padding: 3rem 2rem;
+        }
+        
+        .story-item {
+            margin-bottom: 4rem;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .story-item.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .story-image {
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            height: 300px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .story-image:hover {
+            transform: scale(1.05);
+        }
+        
+        .story-text h3 {
+            color: #2c3e50;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .story-text p {
+            color: #5a6c7d;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        .story-stats {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+            border-radius: 20px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .story-quote {
+            background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border-left: 5px solid #e17055;
+        }
+        
+        .story-quote blockquote {
+            font-size: 1.3rem;
+            font-style: italic;
+            margin: 0;
+            color: #2d3436;
+        }
+        
+        .story-quote cite {
+            font-size: 1rem;
+            color: #636e72;
+            display: block;
+            margin-top: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .story-modal .modal-dialog {
+                margin: 1rem;
+            }
+            
+            .story-content {
+                padding: 2rem 1rem;
+            }
+            
+            .story-modal .modal-title {
+                font-size: 2rem;
+            }
+            
+            .story-modal .modal-header {
+                padding: 1.5rem;
+            }
+        }
