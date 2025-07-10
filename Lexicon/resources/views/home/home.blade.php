@@ -81,7 +81,10 @@
     <!-- Our Mission Section -->
     <section class="about-us-section py-5" id="about">
         <div class="container">
-            <h2 class="text-center mb-5 display-5 fw-bold">Our Mission</h2>
+                      <div class="section-title">
+                <h2>Our Mission</h2>
+                <p>Making a difference in education and student lives worldwide</p>
+            </div>
             <div class="row align-items-center">
                 <!-- Left: Image -->
                     <div class="col-md-6 mb-4 mb-md-0">
@@ -126,8 +129,10 @@
     <!-- Impact Section -->
     <section class="impact py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-3 display-5 fw-bold">Our Impact</h2>
-            <p class="text-center text-muted mb-5">Making a difference in education and student lives worldwide</p>
+                        <div class="section-title">
+                <h2>Our Impact</h2>
+                <p>NMaking a difference in education and student lives worldwide</p>
+            </div>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card text-center border-0 shadow-sm h-100">
@@ -162,9 +167,10 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-lg-8 mx-auto text-center">
-                <p class="text-muted mb-2">Comprehensive education from foundation to advanced levels</p>
-                <h2 class="display-5 fw-bold mb-3">Academic Programs</h2>
-                <p class="text-muted">Advanced curriculum preparing students for higher education Specialized programs for university preparation Hands-on learning with focus on real-world applications</p>
+                 <div class="section-title">
+                <h2>Academic Programs</h2>
+                <p>Advanced curriculum preparing students for higher education Specialized programs for university preparation Hands-on learning with focus on real-world applications</p>
+            </div>
                 <a href="#" class="btn btn-outline-primary">READ MORE</a>
             </div>
         </div>
@@ -251,6 +257,71 @@
         </div>
     </div>
 </section>
+
+ <!-- News Cards -->
+<section class="news-updates py-5">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="section-title">
+                <h2>What's New with Lyceum</h2>
+                <p>News & Updates</p>
+            </div>
+
+        </div>
+        <div class="row g-4">
+            <!-- News Card 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow-sm border-0 news-card">
+                    <div class="card-img-container">
+                        <img src="{{ asset('images/hero-bg1.jpg') }}" class="card-img-top" alt="News Image">
+                        <div class="overlay-content">
+                            <h5 class="card-title">Celebrating Excellence: Mr. Madhura Loku Kaluge Named Pearson Edexcel Innovator of the Year – Asia</h5>
+                            <p class="text-muted mb-2">June 26, 2025 · 2 min read</p>
+                            <p class="card-text">Celebrating excellence and innovation in education with Mr. Madhura Loku Kaluge being named Pearson Edexcel Innovator of the Year.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Card 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow-sm border-0 news-card">
+                    <div class="card-img-container">
+                        <img src="{{ asset('images/hero-bg2.jpg') }}" class="card-img-top" alt="News Image">
+                        <div class="overlay-content">
+                            <h5 class="card-title">Lyceum Nugegoda 2025: A Dazzling Display of Creativity at Lyceum Nugegoda</h5>
+                            <p class="text-muted mb-2">June 9, 2025 · 2 min read</p>
+                            <p class="card-text">A dazzling display of creativity and talent at Lyceum Nugegoda, showcasing the skills of our students in various fields.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Card 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow-sm border-0 news-card">
+                    <div class="card-img-container">
+                        <img src="{{ asset('images/hero-bg3.jpg') }}" class="card-img-top" alt="News Image">
+                        <div class="overlay-content">
+                            <h5 class="card-title">"Knots for Life" Workshop Empowers Young Learners at Lyceum International School, Nugegoda</h5>
+                            <p class="text-muted mb-2">May 28, 2025 · 1 min read</p>
+                            <p class="card-text">The "Knots for Life" workshop inspired young learners to explore creativity and skills through unique hands-on experiences.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More News Cards -->
+        </div>
+        <div class="text-center mt-4">
+            <a href="#" class="btn btn-primary btn-lg">View All News</a>
+        </div>
+    </div>
+</section>
+
 
 
 @endsection
