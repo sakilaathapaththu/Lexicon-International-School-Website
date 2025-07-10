@@ -13,6 +13,15 @@
     <link rel="stylesheet" href="{{ asset('css/about.css') }}">
 </head>
 <body>
+
+<!-- Breadcrumb -->
+<nav aria-label="breadcrumb" class="bg-light py-2 px-3 rounded mb-4">
+    <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">About Us</li>
+    </ol>
+</nav>
+
 <!-- Hero Section -->
     <section class="bg-primary text-white py-5">
         <div class="container">
@@ -249,7 +258,7 @@
         </div>
     </section>
 
-    <!-- Parallax Section with Background Image -->
+<!-- Parallax Section with Background Image -->
     <section class="parallax-section py-5 text-white" style="background-image: url('https://images.unsplash.com/photo-1562774053-701939374585?w=1200&h=600&fit=crop&crop=center');" data-aos="fade-in">
         <div class="parallax-overlay"></div>
         <div class="container position-relative">
@@ -257,13 +266,173 @@
                 <div class="col-lg-8 mx-auto">
                     <h2 class="display-4 fw-bold mb-4" data-aos="fade-up" data-aos-delay="200">Education That Transforms Lives</h2>
                     <p class="lead mb-4" data-aos="fade-up" data-aos-delay="300">We believe every student has the potential to achieve greatness. Our nurturing environment and innovative approach help unlock that potential.</p>
-                    <a href="#" class="btn btn-light btn-lg hover-lift" data-aos="fade-up" data-aos-delay="400">
-                        <i class="fas fa-play me-2"></i>Watch Our Story
-                    </a>
+                    <button class="btn btn-light btn-lg hover-lift" data-bs-toggle="modal" data-bs-target="#storyModal" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-book-open me-2"></i>Discover Our Story
+                    </button>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Story Modal -->
+    <div class="modal fade story-modal" id="storyModal" tabindex="-1" aria-labelledby="storyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header position-relative">
+                    <h4 class="modal-title w-100" id="storyModalLabel">Our Educational Journey</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="story-content">
+                        <!-- Story Item 1 -->
+                        <div class="story-item row align-items-center">
+                            <div class="col-md-6 mb-4">
+                                <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=500&h=300&fit=crop" alt="Our Foundation" class="story-image">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="story-text">
+                                    <h3><i class="fas fa-seedling me-2 text-success"></i>Our Foundation</h3>
+                                    <p>Founded in 1995, our institution began with a simple yet powerful vision: to create an educational environment where every student could thrive. Starting with just 50 students and 5 dedicated teachers, we've grown into a community that nurtures creativity, critical thinking, and character development.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Story Item 2 -->
+                        <div class="story-item row align-items-center">
+                            <div class="col-md-6 order-md-2 mb-4">
+                                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=300&fit=crop" alt="Innovation in Learning" class="story-image">
+                            </div>
+                            <div class="col-md-6 order-md-1">
+                                <div class="story-text">
+                                    <h3><i class="fas fa-lightbulb me-2 text-warning"></i>Innovation in Learning</h3>
+                                    <p>We pioneered interactive learning methodologies that engage students beyond traditional textbooks. Our classrooms are laboratories of discovery where students collaborate, experiment, and develop skills for the 21st century. Technology integrates seamlessly with human connection.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Statistics Section -->
+                        <div class="story-stats">
+                            <div class="row">
+                                <div class="col-md-3 col-6">
+                                    <div class="stat-item">
+                                        <span class="stat-number">2,500+</span>
+                                        <span class="stat-label">Students Graduated</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="stat-item">
+                                        <span class="stat-number">98%</span>
+                                        <span class="stat-label">College Acceptance</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="stat-item">
+                                        <span class="stat-number">150+</span>
+                                        <span class="stat-label">Expert Teachers</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="stat-item">
+                                        <span class="stat-number">28</span>
+                                        <span class="stat-label">Years of Excellence</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Story Item 3 -->
+                        <div class="story-item row align-items-center">
+                            <div class="col-md-6 mb-4">
+                                <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=500&h=300&fit=crop" alt="Community Impact" class="story-image">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="story-text">
+                                    <h3><i class="fas fa-hands-helping me-2 text-primary"></i>Community Impact</h3>
+                                    <p>Our students don't just learn—they lead. Through community service projects, environmental initiatives, and social entrepreneurship programs, our graduates have contributed over 50,000 hours of community service, making a real difference in the world around them.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Quote -->
+                        <div class="story-quote">
+                            <blockquote>
+                                "This institution didn't just give me an education—it gave me the confidence to dream bigger and the tools to make those dreams reality. The supportive community and innovative teaching methods prepared me for challenges I never imagined I could face."
+                            </blockquote>
+                            <cite>— Sarah Chen, Class of 2018, Now Software Engineer at Google</cite>
+                        </div>
+
+                        <!-- Story Item 4 -->
+                        <div class="story-item row align-items-center">
+                            <div class="col-md-6 order-md-2 mb-4">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=300&fit=crop" alt="Future Vision" class="story-image">
+                            </div>
+                            <div class="col-md-6 order-md-1">
+                                <div class="story-text">
+                                    <h3><i class="fas fa-rocket me-2 text-info"></i>Future Vision</h3>
+                                    <p>As we look toward the future, we continue to evolve and adapt. Our new STEAM programs, global exchange initiatives, and partnerships with leading universities ensure that our students are prepared for an ever-changing world while maintaining our core values of integrity, compassion, and excellence.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Animate story items when modal opens
+        document.getElementById('storyModal').addEventListener('shown.bs.modal', function () {
+            const storyItems = document.querySelectorAll('.story-item');
+            storyItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.classList.add('animate');
+                }, index * 200);
+            });
+        });
+
+        // Reset animations when modal closes
+        document.getElementById('storyModal').addEventListener('hidden.bs.modal', function () {
+            const storyItems = document.querySelectorAll('.story-item');
+            storyItems.forEach(item => {
+                item.classList.remove('animate');
+            });
+        });
+
+        // Counter animation for statistics
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent.replace(/[^\d]/g, ''));
+                const suffix = counter.textContent.replace(/[\d]/g, '');
+                let current = 0;
+                const increment = target / 100;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target + suffix;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current) + suffix;
+                    }
+                }, 20);
+            });
+        }
+
+        // Trigger counter animation when modal opens
+        document.getElementById('storyModal').addEventListener('shown.bs.modal', function () {
+            setTimeout(animateCounters, 800);
+        });
+    </script>
 
     <!-- What Makes Us Different Section -->
     <section class="py-5">
