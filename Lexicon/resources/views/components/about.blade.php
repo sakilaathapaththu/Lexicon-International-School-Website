@@ -39,7 +39,7 @@
     <section class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-primary mb-3" data-aos="fade-up">Our Beautiful School</h2>
+                <h2 class="display-5 fw-bold text-primary mb-3" data-aos="fade-up">Our School</h2>
                 <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">Explore our state-of-the-art facilities designed for optimal learning</p>
             </div>
             <div class="row g-4">
@@ -110,7 +110,7 @@
     <section class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-primary mb-3" data-aos="fade-up">World-Class Facilities</h2>
+                <h2 class="display-5 fw-bold text-primary mb-3" data-aos="fade-up">Our Facilities</h2>
                 <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">Discover our exceptional learning environments</p>
             </div>
             <div class="row g-4">
@@ -382,33 +382,33 @@
         </div>
     </section>
 
-    <!-- Statistics Section -->
+ <!-- Statistics Section -->
     <section class="py-5 bg-primary text-white">
         <div class="container">
             <div class="row text-center g-4">
                 <div class="col-lg-3 col-md-6">
-                    <div class="mb-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stats-item mb-3" data-aos="fade-up" data-aos-delay="100">
                         <i class="fas fa-users stats-icon"></i>
                         <h2 class="display-4 fw-bold">1,200+</h2>
                         <p class="lead mb-0">Students</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="mb-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stats-item mb-3" data-aos="fade-up" data-aos-delay="200">
                         <i class="fas fa-chalkboard-teacher stats-icon"></i>
                         <h2 class="display-4 fw-bold">80+</h2>
                         <p class="lead mb-0">Expert Faculty</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="mb-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stats-item mb-3" data-aos="fade-up" data-aos-delay="300">
                         <i class="fas fa-globe stats-icon"></i>
                         <h2 class="display-4 fw-bold">25+</h2>
                         <p class="lead mb-0">Nationalities</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="mb-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stats-item mb-3" data-aos="fade-up" data-aos-delay="400">
                         <i class="fas fa-award stats-icon"></i>
                         <h2 class="display-4 fw-bold">15+</h2>
                         <p class="lead mb-0">Years of Excellence</p>

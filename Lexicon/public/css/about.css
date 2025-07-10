@@ -286,3 +286,32 @@ html {
             background-color: #0b5ed7;
             border-color: #0a58ca;
         }
+
+
+        .stats-icon {
+            font-size: 3.5rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .stats-icon:hover {
+            color: #fff;
+            transform: scale(1.1);
+        }
+        
+        .display-4 {
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .lead {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .stats-item {
+            padding: 2rem 1rem;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
