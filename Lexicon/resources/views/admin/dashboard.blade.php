@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Admin Dashboard</title>
@@ -16,4 +16,14 @@
         <button type="submit">Logout</button>
     </form>
 </body>
-</html>
+</html> -->
+@extends('layouts.admin')
+@section('title', 'Dashboard')
+
+@section('content')
+    <p>Welcome to your dashboard, <strong>{{ $admin->fullName ?? $admin->username }}</strong>.</p>
+    <p>Email: {{ $admin->email }}</p>
+    <p>Phone: {{ $admin->phone }}</p>
+    <p>Role: {{ $admin->role }}</p>
+    <p>Last Login: {{ $admin->last_login }}</p>
+@endsection

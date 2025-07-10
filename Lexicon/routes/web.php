@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminLoginController;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\AdminController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,14 +31,18 @@ Route::get('/admin/login', [AdminLoginController::class, 'showLoginForm'])->name
 Route::post('/admin/login', [AdminLoginController::class, 'login']);
 Route::post('/admin/logout', [AdminLoginController::class, 'logout'])->name('admin.logout');
 
-// 🔐 All Admin Routes - Protected by auth:admin
-Route::middleware('auth:admin')->prefix('admin')->group(function () {
+// 🔐 All Admin Routes - Protected
+Route::middleware(['auth:admin'])->prefix('admin')->group(function () {
     Route::get('/dashboard', function () {
         $admin = Auth::guard('admin')->user();
         return view('admin.dashboard', compact('admin'));
     })->name('admin.dashboard');
-
-    // Add other admin-only pages here
-    // Route::get('/settings', ...);
 });
 
+// 🔐 Superadmin Only Routes
+Route::middleware(['auth:admin', 'admin.super'])->prefix('admin')->group(function () {
+    Route::get('/settings', [AdminController::class, 'settings'])->name('admin.settings');
+    Route::post('/settings/update', [AdminController::class, 'updateSelf'])->name('admin.updateSelf');
+    Route::get('/admins', [AdminController::class, 'index'])->name('admin.list');
+    Route::post('/admins/create', [AdminController::class, 'store'])->name('admin.create');
+});
