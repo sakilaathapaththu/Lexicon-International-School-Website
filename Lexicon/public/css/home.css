@@ -69,7 +69,83 @@
 .hero-dot.active {
     background: #fff;
 }
----------------------------------------
+
+
+/* General Container */
+.general-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row-g {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch; /* Stretch both columns to the same height */
+  gap: 30px; /* Space between the left and right columns */
+}
+
+/* Left Side (light background with heading) */
+.left-side {
+  background-color: #ffffff; /* Red background */
+  color: #1a1a1a; /* Dark text */
+  flex: 1; /* Take up equal space */
+  padding: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.left-side h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Right Side (dark background with text) */
+.right-side {
+  background-color: #0b1f3a; /* Dark background */
+  color: #f0f4f8; /* Light text color */
+  flex: 1; /* Take up equal space */
+  padding: 3rem;
+  position: relative;
+  z-index: 0;
+  margin-left: -50px; /* Pull the right side over the left side */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Right side text styling */
+.right-side p {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.right-side ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.right-side ul li {
+  position: relative;
+  font-size: 1.125rem;
+  margin-bottom: 0.8rem;
+  padding-left: 30px;
+  color: #aad4ff; /* Light blue color for the list items */
+}
+
+.right-side ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ffc107; /* Gold color for the checkmark */
+  font-weight: bold;
+}
+
+/* Programs Section */
  .programs {
     background-color: #f8f9fa;
 }
@@ -237,3 +313,6 @@
         font-size: 0.8rem;
     }
 }
+
+
+

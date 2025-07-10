@@ -22,7 +22,6 @@
                 </div>
             </div>
         </div>
-        
         <!-- Slider Navigation Dots -->
         <div class="hero-dots">
             <span class="hero-dot active" data-slide="0"></span>
@@ -31,9 +30,77 @@
             <span class="hero-dot" data-slide="3"></span>
         </div>
     </section>
+     <!-- General -->
+    <section>
+    <div class="general-container">
+        <div class="row-g">
+        <!-- Left side (light background with heading) -->
+        <div class="left-side">
+            <h1>
+            LexCon is the largest network of International Schools in Sri Lanka with over 25,000+ students and over 3,300+ teachers in total and growing!
+            </h1>
+        </div>
+        
+        <!-- Right side (dark background with text) -->
+        <div class="right-side">
+            <p>At LexCon International School you can:</p>
+            <ul>
+            <li>Learn from skilled and talented teachers.</li>
+            <li>Receive International Educational Certificates.</li>
+            <li>Achieve your utmost potential.</li>
+            <li>Be a part of a community of inspired, intellectual and talented individuals.</li>
+            </ul>
+            <p>
+            We utilize the best practices available in teaching to develop the skills required for success in higher education.
+            </p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    
+    <!-- About Section With Background Image -->
+    <section class="about-LexCon-section position-relative text-white" style="background-image: url('{{ asset('images/about-lexcon.jpg') }}'); background-size: cover; background-position: center; min-height:150px;">
+        <!-- Dark Overlay -->
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+
+        <!-- Centered Box With Space From Top -->
+        <div class="container position-relative z-2 h-100 d-flex justify-content-center align-items-start">
+            <div class="bg-dark bg-opacity-75 text-white p-4 p-md-5 rounded shadow" style="margin-top: 220px; max-width: 1200px;">
+                <h2 class="fw-bold mb-3">About LexCon</h2>
+                <p class="mb-3">
+                    At LexCon International School, we empower students with knowledge, confidence, and compassion. Our community nurtures each learner through a blend of academic excellence, cultural values, and global perspectives.
+                </p>
+                <p class="mb-4">
+                    Guided by experienced educators and an inclusive vision, LexCon prepares students to succeed in both local and international arenas — from early childhood to advanced levels.
+                </p>
+                <a href="#about-details" class="btn btn-light btn-sm">Read Full Story <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Our Mission Section -->
+    <section class="about-us-section py-5" id="about">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 fw-bold">Our Mission</h2>
+            <div class="row align-items-center">
+                <!-- Left: Image -->
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <img src="{{ asset('images/hero-bg1.jpg') }}" alt="About LexCon" class="img-fluid rounded shadow">
+                    </div>
+
+                    <!-- Right: Text -->
+                    <div class="col-md-6">
+                        <h2 class="display-5 fw-bold mb-4">About LexCon International School</h2>
+                        <p class="text-muted mb-3">At LexCon, we believe in nurturing future leaders through a holistic, globally-aligned education. Our mission is to empower students to reach their full potential in an environment that fosters critical thinking, creativity, and collaboration.</p>
+                        <p class="text-muted mb-4">With state-of-the-art facilities, a committed faculty, and a vibrant learning community, LexCon offers a unique educational experience that prepares students for success in the modern world.</p>
+                        <a href="#mission" class="btn btn-outline-primary px-4 py-2">Our Mission</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <!-- Mission Section -->
-    <section class="mission py-5" id="about">
+    <!-- <section class="mission py-5" id="about">
         <div class="container">
             <h2 class="text-center mb-5 display-5 fw-bold">Our Mission</h2>
             <div class="row align-items-center">
@@ -54,7 +121,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Impact Section -->
     <section class="impact py-5 bg-light">
@@ -184,6 +251,8 @@
         </div>
     </div>
 </section>
+
+
 @endsection
 
 @section('styles')
@@ -203,4 +272,5 @@
     
     <!-- Custom Home Page Scripts -->
     <script src="{{ asset('js/home.js') }}"></script>
+    
 @endsection
