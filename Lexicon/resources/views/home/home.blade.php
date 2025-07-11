@@ -324,6 +324,64 @@
     </div>
 </section>
 
+<!-- Gallery Section -->
+<section class="photo-gallery py-5 bg-light" id="gallery">
+  <div class="container">
+    <div class="section-title text-center mb-4">
+      <h2>Gallery</h2>
+      <p>Explore moments from our vibrant school life and international events</p>
+    </div>
+    <div class="row g-4">
+      <!-- 12 images -->
+      <div class="col-5th">
+        <div class="gallery-item">
+          <img src="images/hero-bg1.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 1">
+        </div>
+      </div>
+      <div class="col-5th">
+        <div class="gallery-item">
+          <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 2">
+        </div>
+      </div>
+      <div class="col-5th">
+        <div class="gallery-item">
+          <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 3">
+        </div>
+      </div>
+      <div class="col-5th">
+        <div class="gallery-item">
+          <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 4">
+        </div>
+      </div>
+      <div class="col-5th">
+        <div class="gallery-item">
+          <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 5">
+        </div>
+      </div>
+
+      <!-- Next row -->
+      <div class="col-5th">
+        <div class="gallery-item">
+          <img src="images/hero-bg1.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 6">
+        </div>
+      </div>
+      <div class="col-5th">
+        <div class="gallery-item">
+          <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 7">
+        </div>
+      </div>
+      <div class="col-5th">
+        <div class="gallery-item">
+          <img src="images/hero-bg1.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 8">
+        </div>
+      </div>
+        <div class="text-center mt-4">
+        <a href="#" class="btn btn-primary btn-lg">View All </a>
+    </div>
+  </div>
+  
+</section>
+
 
 
 @endsection
