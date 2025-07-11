@@ -18,7 +18,7 @@
                 <div class="col-lg-8">
                     <h1 class="display-4 fw-bold mb-4 hero-title">Welcome to LexCon International School</h1>
                     <p class="lead mb-4 hero-subtitle">Empowering minds, shaping futures through innovative education and global perspectives</p>
-                    <a href="#programs" class="btn btn-light btn-lg px-4 py-2 hero-btn">Explore Programs</a>
+                    <a href="{{ url('/admissions') }}" class="btn btn-light btn-lg px-4 py-2 hero-btn">Apply Now</a>
                 </div>
             </div>
         </div>

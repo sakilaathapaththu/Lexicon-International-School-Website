@@ -53,7 +53,7 @@
             <li><a href="#contact" class="text-decoration-none text-dark fw-medium">Contact</a></li>
             <li><a href="#news" class="text-decoration-none text-dark fw-medium">News & Updates</a></li>
         </ul>
-        <a href="#apply" class="btn btn-danger rounded-pill fw-medium px-4 py-2">Apply Now</a>
+
     </nav>
 
     @yield('content')

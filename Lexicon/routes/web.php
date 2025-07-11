@@ -30,6 +30,9 @@ Route::get('/about', function () {
 Route::get('/advisory', function () {
     return view('components.advisory');
 });
+Route::get('/admissions', function () {
+    return view('components.admissions');
+});
 
 // Admin Login Routes (public)
 Route::get('/admin/login', [AdminLoginController::class, 'showLoginForm'])->name('admin.login');
