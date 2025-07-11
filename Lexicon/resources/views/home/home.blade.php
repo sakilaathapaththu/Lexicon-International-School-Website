@@ -169,8 +169,7 @@
             <div class="col-lg-8 mx-auto text-center">
                 <div class="section-title">
                     <h2>Academic Programs</h2>
-                    <p>
-                        Advanced curriculum preparing students for higher education. Specialized programs for university preparation. Foundation learning with focus on core subjects and character development
+                    <p>Advanced curriculum preparing students for higher education. Specialized programs for university preparation. Foundation learning with focus on core subjects and character development
                     </p>
                     <!-- <a href="#" class="btn btn-outline-primary mt-3">READ MORE</a> -->
                 </div>
@@ -183,7 +182,7 @@
                 <div class="program-card h-100">
                     <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
                     <div class="program-overlay red-overlay">
-                        <div class="program-content">
+                        <div class="program-content" style="color: white;">
                             <div class="program-number">1</div>
                             <h3 class="program-title">Primary Education</h3>
                             <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
@@ -198,7 +197,7 @@
                 <div class="program-card h-100">
                     <div class="program-bg secondary-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
                     <div class="program-overlay blue-overlay">
-                        <div class="program-content">
+                        <div class="program-content" style="color: white;">
                             <div class="program-number">2</div>
                             <h3 class="program-title">Secondary Education</h3>
                             <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
@@ -219,7 +218,7 @@
                 <div class="program-card h-100">
                     <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
                     <div class="program-overlay dark-overlay">
-                        <div class="program-content">
+                        <div class="program-content" style="color: white;">
                             <div class="program-number">3</div>
                             <h3 class="program-title">Advanced Level</h3>
                             <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
@@ -240,7 +239,7 @@
                 <div class="program-card h-100">
                     <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg2.jpg') }}');"></div>
                     <div class="program-overlay orange-overlay">
-                        <div class="program-content">
+                        <div class="program-content" style="color: white;">
                             <div class="program-number">4</div>
                             <h3 class="program-title">Advanced Level</h3>
                             <p class="program-subtitle">Specialized training with focus on advanced concepts and practical applications</p>
@@ -278,8 +277,7 @@
                         <img src="{{ asset('images/hero-bg1.jpg') }}" class="card-img-top" alt="News Image">
                         <div class="overlay-content">
                             <h5 class="card-title">Celebrating Excellence: Mr. Madhura Loku Kaluge Named Pearson Edexcel Innovator of the Year – Asia</h5>
-                            <p class="text-muted mb-2">June 26, 2025 · 2 min read</p>
-                            <p class="card-text">Celebrating excellence and innovation in education with Mr. Madhura Loku Kaluge being named Pearson Edexcel Innovator of the Year.</p>
+                            <p class="card-text" >Celebrating excellence and innovation in education with Mr. Madhura Loku Kaluge being named Pearson Edexcel Innovator of the Year.</p>
                             <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
                         </div>
                     </div>
@@ -293,7 +291,6 @@
                         <img src="{{ asset('images/hero-bg2.jpg') }}" class="card-img-top" alt="News Image">
                         <div class="overlay-content">
                             <h5 class="card-title">Lyceum Nugegoda 2025: A Dazzling Display of Creativity at Lyceum Nugegoda</h5>
-                            <p class="text-muted mb-2">June 9, 2025 · 2 min read</p>
                             <p class="card-text">A dazzling display of creativity and talent at Lyceum Nugegoda, showcasing the skills of our students in various fields.</p>
                             <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
                         </div>
@@ -308,7 +305,6 @@
                         <img src="{{ asset('images/hero-bg3.jpg') }}" class="card-img-top" alt="News Image">
                         <div class="overlay-content">
                             <h5 class="card-title">"Knots for Life" Workshop Empowers Young Learners at Lyceum International School, Nugegoda</h5>
-                            <p class="text-muted mb-2">May 28, 2025 · 1 min read</p>
                             <p class="card-text">The "Knots for Life" workshop inspired young learners to explore creativity and skills through unique hands-on experiences.</p>
                             <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
                         </div>
