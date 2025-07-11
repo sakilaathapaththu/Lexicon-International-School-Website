@@ -18,7 +18,7 @@
 <nav aria-label="breadcrumb" class="bg-light py-2 px-3 rounded mb-4">
     <ol class="breadcrumb mb-0">
         <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">About Us</li>
+        <li class="breadcrumb-item active" aria-current="page">About the School</li>
     </ol>
 </nav>
 
@@ -551,7 +551,7 @@
         </div>
     </section>
 
- <!-- Statistics Section -->
+<!-- Statistics Section -->
     <section class="py-5 bg-primary text-white">
         <div class="container">
             <div class="row text-center g-4">
@@ -633,7 +633,7 @@
     </section> -->
 
     <!-- School Events Gallery Section -->
-    <section class="py-5 bg-light">
+    <!-- <section class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="display-5 fw-bold text-primary mb-3" data-aos="fade-up">School Events & Activities</h2>
@@ -676,7 +676,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Call to Action Section -->
     <section class="py-5">
@@ -783,7 +783,7 @@
     </section> -->
 
     <!-- Additional School Life Section -->
-    <section class="py-5">
+    <!-- <section class="py-5">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="display-5 fw-bold text-primary mb-3" data-aos="fade-up">More From Our School Life</h2>
@@ -832,7 +832,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 @endsection
 
 @section('styles')
