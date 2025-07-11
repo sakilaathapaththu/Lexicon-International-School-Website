@@ -31,6 +31,14 @@ Route::get('/advisory', function () {
     return view('components.advisory');
 });
 
+Route::get('/founder', function () {
+    return view('components.founder');
+});
+
+Route::get('/director', function () {
+    return view('components.director');
+});
+
 // Admin Login Routes (public)
 Route::get('/admin/login', [AdminLoginController::class, 'showLoginForm'])->name('admin.login');
 Route::post('/admin/login', [AdminLoginController::class, 'login']);
