@@ -165,79 +165,80 @@
 <!-- Academic Programs -->
 <section class="programs py-5" id="programs">
     <div class="container">
-        <div class="row mb-5">
+        <div class="row mb-4">
             <div class="col-lg-8 mx-auto text-center">
-                 <div class="section-title">
-                <h2>Academic Programs</h2>
-                <p>Advanced curriculum preparing students for higher education Specialized programs for university preparation Hands-on learning with focus on real-world applications</p>
-            </div>
-                <a href="#" class="btn btn-outline-primary">READ MORE</a>
-            </div>
-        </div>
-        
-        <div class="row g-4">
-            <!-- Primary Education -->
-        <div class="program-card">
-            <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
-            <div class="program-overlay red-overlay">
-                <div class="program-content">
-                    <div class="program-number">1</div>
-                    <h3 class="program-title">Primary Education</h3>
-                    <p class="program-subtitle">Building strong foundations...</p>
-                    <ul class="program-features">
-                        <li><i class="fas fa-check"></i> Literacy & Numeracy</li>
-                    </ul>
-                    <a href="#" class="btn btn-warning btn-sm">Read more</a>
+                <div class="section-title">
+                    <h2>Academic Programs</h2>
+                    <p>
+                        Advanced curriculum preparing students for higher education. Specialized programs for university preparation. Foundation learning with focus on core subjects and character development
+                    </p>
+                    <!-- <a href="#" class="btn btn-outline-primary mt-3">READ MORE</a> -->
                 </div>
             </div>
         </div>
-            
-            <!-- Secondary Education -->
-            <div class="col-lg-6">
-                <div class="program-card">
-                    <div class="program-bg secondary-bg"></div>
+
+        <div class="row g-4">
+            <!-- Primary Education - Big Box -->
+            <div class="col-lg-8">
+                <div class="program-card h-100">
+                    <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
+                    <div class="program-overlay red-overlay">
+                        <div class="program-content">
+                            <div class="program-number">1</div>
+                            <h3 class="program-title">Primary Education</h3>
+                            <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
+                            <a href="#" class="btn btn-warning btn-sm">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secondary Education - Small Box Right -->
+            <div class="col-lg-4">
+                <div class="program-card h-100">
+                    <div class="program-bg secondary-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
                     <div class="program-overlay blue-overlay">
                         <div class="program-content">
                             <div class="program-number">2</div>
                             <h3 class="program-title">Secondary Education</h3>
                             <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
                             <ul class="program-features">
-                                <li><i class="fas fa-check"></i> Core Academic Excellence</li>
-                                <li><i class="fas fa-check"></i> Character Development</li>
+                                <li><i class="fas fa-check"></i> English & Mathematics</li>
                                 <li><i class="fas fa-check"></i> Science & Social Studies</li>
                                 <li><i class="fas fa-check"></i> Arts & Physical Education</li>
+                                <li><i class="fas fa-check"></i> Character Development</li>
                             </ul>
                             <a href="#" class="btn btn-warning btn-sm">Read more</a>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- Advanced Level -->
+
+            <!-- Advanced Level (Left Small Box) -->
             <div class="col-lg-6">
-                <div class="program-card">
-                    <div class="program-bg advanced-bg"></div>
+                <div class="program-card h-100">
+                    <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
                     <div class="program-overlay dark-overlay">
                         <div class="program-content">
                             <div class="program-number">3</div>
                             <h3 class="program-title">Advanced Level</h3>
                             <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
                             <ul class="program-features">
-                                <li><i class="fas fa-check"></i> University Preparation</li>
-                                <li><i class="fas fa-check"></i> Advanced Coursework</li>
-                                <li><i class="fas fa-check"></i> Research Projects</li>
-                                <li><i class="fas fa-check"></i> Critical Thinking Skills</li>
+                                <li><i class="fas fa-check"></i> English & Mathematics</li>
+                                <li><i class="fas fa-check"></i> Science & Social Studies</li>
+                                <li><i class="fas fa-check"></i> Arts & Physical Education</li>
+                                <li><i class="fas fa-check"></i> Character Development</li>
                             </ul>
                             <a href="#" class="btn btn-warning btn-sm">Read more</a>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- Advanced Level 2 -->
+
+            <!-- Advanced Level (Right Small Box) -->
             <div class="col-lg-6">
-                <div class="program-card">
-                    <div class="program-bg advanced2-bg"></div>
+                <div class="program-card h-100">
+                    <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg2.jpg') }}');"></div>
                     <div class="program-overlay orange-overlay">
                         <div class="program-content">
                             <div class="program-number">4</div>
@@ -254,6 +255,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
