@@ -40,13 +40,14 @@
                 </a>
                 <ul class="dropdown-menu shadow-sm" aria-labelledby="aboutDropdown">
                     <li><a class="dropdown-item py-2" href="{{ url('/about') }}">About the School</a></li>
-                    <li><a class="dropdown-item py-2" href="{{ url('/about/advisory-council') }}">Advisory Council</a></li>
+                    <li><a class="dropdown-item py-2" href="{{ url('/advisory') }}">Advisory Council</a></li>
                     <li><a class="dropdown-item py-2" href="{{ url('/about/founders-message') }}">Founder's Message</a></li>
                     <li><a class="dropdown-item py-2" href="{{ url('/about/directors-message') }}">Director's Message</a></li>
                 </ul>
             </li>
             <li><a href="#programs" class="text-decoration-none text-dark fw-medium">Programs</a></li>
             <li><a href="#contact" class="text-decoration-none text-dark fw-medium">Contact</a></li>
+            <li><a href="#news" class="text-decoration-none text-dark fw-medium">News & Updates</a></li>
         </ul>
         <a href="#apply" class="btn btn-danger rounded-pill fw-medium px-4 py-2">Apply Now</a>
     </nav>
