@@ -11,7 +11,7 @@
 /* Hero Section */
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 95vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -49,7 +49,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+    background: linear-gradient(135deg, rgba(8, 8, 8, 0.3), rgba(0,0,0,0.6));
     z-index: 2;
 }
 
@@ -71,7 +71,7 @@
     width: 12px;
     height: 12px;
     margin: 0 5px;
-    background: rgba(255, 255, 255, 0.6);
+    background: var(--cool-blue);
     border-radius: 50%;
     cursor: pointer;
     transition: background 0.3s;
@@ -80,6 +80,77 @@
 .hero-dot.active {
     background: #fff;
 }
+/* General Button Hover Effect */
+.btn {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Add an inner effect for button hover */
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: width 0.4s, height 0.4s, top 0.4s, left 0.4s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* On hover, expand the effect */
+.btn:hover::before {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+}
+
+/* Button Hover Animation */
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0; /* Or customize with your preferred color */
+}
+
+/* Example for specific button classes */
+.hero-btn, .btn-warning, .btn-outline-primary, .btn-light {
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #2196F3;
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn-warning:hover {
+    background-color: #ffc107;
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn-outline-primary:hover {
+    color: #1976D2;
+    border-color: #1976D2;
+    transform: scale(1.1);
+}
+
+.btn-light:hover {
+    background-color: #f8f9fa;
+    color: #1976D2;
+    transform: scale(1.1);
+}
+
 
 /* Section Title */
 .section-title {

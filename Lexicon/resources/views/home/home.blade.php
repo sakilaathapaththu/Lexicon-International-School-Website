@@ -276,7 +276,7 @@
                     <div class="card-img-container">
                         <img src="{{ asset('images/hero-bg1.jpg') }}" class="card-img-top" alt="News Image">
                         <div class="overlay-content">
-                            <h5 class="card-title">Celebrating Excellence: Mr. Madhura Loku Kaluge Named Pearson Edexcel Innovator of the Year – Asia</h5>
+                            <h5 class="card-title">Celebrating Excellence: Mr. Madhura Loku Kaluge Named Pearson </h5>
                             <p class="card-text" >Celebrating excellence and innovation in education with Mr. Madhura Loku Kaluge being named Pearson Edexcel Innovator of the Year.</p>
                             <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
                         </div>
@@ -315,7 +315,7 @@
             <!-- More News Cards -->
         </div>
         <div class="text-center mt-4">
-            <a href="#" class="btn btn-primary btn-lg">View All News</a>
+            <a href="#" class="btn btn-light btn-sm">View All News</a>
         </div>
     </div>
 </section>
@@ -372,7 +372,7 @@
         </div>
       </div>
         <div class="text-center mt-4">
-        <a href="#" class="btn btn-primary btn-lg">View All </a>
+        <a href="#" class="btn btn-light btn-sm">View All </a>
     </div>
   </div>
   
