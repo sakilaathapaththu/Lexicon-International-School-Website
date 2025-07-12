@@ -48,4 +48,8 @@ class GalleryController extends Controller
         $gallery->delete();
         return back()->with('success', 'Image deleted.');
     }
+
+
+
+
 }
