@@ -213,7 +213,7 @@
 
 /* Right Side */
 .right-side {
-    background-color: #0b1f3a;
+    background-color: #071221;
     color: #f0f4f8;
     flex: 1;
     padding: 3rem;
@@ -243,14 +243,6 @@
     color: #aad4ff;
 }
 
-.right-side ul li::before {
-    content: "✔";
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #ffc107;
-    font-weight: bold;
-}
 
 /* Programs Section */
 .programs {
@@ -369,7 +361,6 @@
 /* News Section */
 .news-updates {
     padding: 80px 0;
-    background: var(--seashell-white);
 }
 
 .news-card {
