@@ -4,6 +4,7 @@
 
 @section('content')
 
+
     <!-- Hero Section -->
     <section class="hero text-white py-5" id="home">
         <div class="hero-slider">
@@ -260,7 +261,7 @@
     </section>
 
     <!-- News Cards -->
-    <section class="news-updates py-5">
+    <!-- <section class="news-updates py-5">
         <div class="container">
             <div class="row mb-4">
                 <div class="section-title">
@@ -269,9 +270,9 @@
                 </div>
 
             </div>
-            <div class="row g-4">
+            <div class="row g-4"> -->
                 <!-- News Card 1 -->
-                <div class="col-lg-4 col-md-6">
+                <!-- <div class="col-lg-4 col-md-6">
                     <div class="card shadow-sm border-0 news-card">
                         <div class="card-img-container">
                             <img src="{{ asset('images/hero-bg1.jpg') }}" class="card-img-top" alt="News Image">
@@ -282,10 +283,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- News Card 2 -->
-                <div class="col-lg-4 col-md-6">
+                <!-- <div class="col-lg-4 col-md-6">
                     <div class="card shadow-sm border-0 news-card">
                         <div class="card-img-container">
                             <img src="{{ asset('images/hero-bg2.jpg') }}" class="card-img-top" alt="News Image">
@@ -296,10 +297,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- News Card 3 -->
-                <div class="col-lg-4 col-md-6">
+                <!-- <div class="col-lg-4 col-md-6">
                     <div class="card shadow-sm border-0 news-card">
                         <div class="card-img-container">
                             <img src="{{ asset('images/hero-bg3.jpg') }}" class="card-img-top" alt="News Image">
@@ -310,73 +311,102 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- More News Cards -->
-            </div>
+            <!-- </div>
             <div class="text-center mt-4">
                 <a href="#" class="btn btn-light btn-sm">View All News</a>
             </div>
         </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section class="photo-gallery py-5 bg-light" id="gallery">
+    </section> -->
+<section class="news-updates py-5">
     <div class="container">
-        <div class="section-title text-center mb-4">
-        <h2>Gallery</h2>
-        <p>Explore moments from our vibrant school life and international events</p>
-        </div>
-        <div class="row g-4">
-        <!-- 12 images -->
-        <div class="col-5th">
-            <div class="gallery-item">
-            <img src="images/hero-bg1.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 1">
-            </div>
-        </div>
-        <div class="col-5th">
-            <div class="gallery-item">
-            <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 2">
-            </div>
-        </div>
-        <div class="col-5th">
-            <div class="gallery-item">
-            <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 3">
-            </div>
-        </div>
-        <div class="col-5th">
-            <div class="gallery-item">
-            <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 4">
-            </div>
-        </div>
-        <div class="col-5th">
-            <div class="gallery-item">
-            <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 5">
+        <div class="row mb-4">
+            <div class="section-title">
+                <h2>News & Updates</h2>
+                <p>What's New with LexCon</p>
             </div>
         </div>
 
-        <!-- Next row -->
-        <div class="col-5th">
-            <div class="gallery-item">
-            <img src="images/hero-bg1.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 6">
-            </div>
+        <div class="row g-4">
+            @forelse ($posts as $post)
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm border-0 news-card">
+                        <div class="card-img-container">
+                            <img src="{{ asset($post->featured_image) }}" class="card-img-top" alt="News Image">
+                            <div class="overlay-content">
+                                <h5 class="card-title">{{ \Illuminate\Support\Str::limit($post->title, 70) }}</h5>
+                                <p class="card-text">{{ \Illuminate\Support\Str::limit(strip_tags($post->content), 120) }}</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @empty
+                <p class="text-muted text-center">No recent news available.</p>
+            @endforelse
         </div>
-        <div class="col-5th">
-            <div class="gallery-item">
-            <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 7">
-            </div>
-        </div>
-        <div class="col-5th">
-            <div class="gallery-item">
-            <img src="images/hero-bg1.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 8">
-            </div>
-        </div>
-            <div class="text-center mt-4">
-            <a href="#" class="btn btn-light btn-sm">View All </a>
+
+        <div class="text-center mt-4">
+            <a href="{{ url('/posts') }}" class="btn btn-light btn-sm">View All News</a>
         </div>
     </div>
+</section>
+
     
-    </section>
+
+<!-- Gallery Section -->
+<section class="photo-gallery py-5 bg-light" id="gallery">
+    <div class="container">
+        <div class="section-title text-center mb-4">
+            <h2>Gallery</h2>
+            <p>Explore moments from our vibrant school life and international events</p>
+        </div>
+
+        <div class="row g-4">
+            @forelse($recentImages as $title => $images)
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-sm h-100 position-relative overflow-hidden gallery-card">
+                        <div id="carousel-{{ \Illuminate\Support\Str::slug($title) }}" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                @foreach ($images as $index => $image)
+                                    <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
+                                        <img src="{{ asset($image->image_path) }}" class="d-block w-100" alt="{{ $image->title }}" style="height: 320px; object-fit: cover;">
+                                    </div>
+                                @endforeach
+                            </div>
+                            @if(count($images) > 1)
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-{{ \Illuminate\Support\Str::slug($title) }}" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-{{ \Illuminate\Support\Str::slug($title) }}" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            @endif
+                        </div>
+
+                        <div class="card-img-overlay d-flex flex-column justify-content-end p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                            <small class="text-white-50 mb-1">{{ \Carbon\Carbon::parse($images[0]->created_at)->format('F d, Y') }}</small>
+                            <h5 class="card-title fw-bold">{{ $title ?? 'Untitled Album' }}</h5>
+                            <div class="d-flex gap-1 flex-wrap">
+                                <span class="badge bg-light text-dark small">Gallery</span>
+                                <span class="badge bg-secondary small">Photos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @empty
+                <div class="text-center text-muted">No recent images found.</div>
+            @endforelse
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="{{ url('/gallery') }}" class="btn btn-outline-primary btn-sm">View Full Gallery</a>
+        </div>
+    </div>
+</section>
+
 
 
 
