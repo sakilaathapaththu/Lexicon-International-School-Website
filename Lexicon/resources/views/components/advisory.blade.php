@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'About Us - Lexicon International School')
+@section('title', 'Advisory Council - Lexicon International School')
 
 @section('content')
 <head>

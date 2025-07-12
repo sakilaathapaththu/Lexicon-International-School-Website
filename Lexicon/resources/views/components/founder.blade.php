@@ -95,7 +95,9 @@
             </div>
         </div>
     </section>
+@endsection
 
+@section('styles')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script>
         // Smooth scrolling animation observer
