@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
-                <span class="brand-text">LexCon International School</span>
+                <span class="brand-text">LexiCon International School</span>
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,7 +71,7 @@
                 <div class="row">
                     <!-- School Information -->
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="footer-logo">LexCon International School</div>
+                        <div class="footer-logo">LexiCon International School</div>
                         <p class="footer-description">
                             Empowering young minds through excellence in education, innovation, and global citizenship. 
                             We nurture students to become confident, creative, and compassionate leaders of tomorrow.
@@ -125,11 +125,11 @@
                             </div>
                             <div class="mb-3">
                                 <i class="fas fa-envelope"></i>
-                                info@lexconinternational.edu.lk
+                                info@lexiconinternational.edu.lk
                             </div>
                             <div class="mb-3">
                                 <i class="fas fa-globe"></i>
-                                www.lexconinternational.edu.lk
+                                www.lexiconinternational.edu.lk
                             </div>
                         </div>
                         
@@ -162,7 +162,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-8">
                         <p class="mb-0">
-                            &copy; 2025 LexCon International School, Kurunegala. All rights reserved. 
+                            &copy; 2025 LexiCon International School, Kurunegala. All rights reserved. 
                             <a href="{{ url('/privacy') }}" class="text-decoration-none">Privacy Policy</a> | 
                             <a href="{{ url('/terms') }}" class="text-decoration-none">Terms of Service</a>
                         </p>
