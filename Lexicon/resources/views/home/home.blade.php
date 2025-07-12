@@ -261,65 +261,7 @@
     </section>
 
     <!-- News Cards -->
-    <!-- <section class="news-updates py-5">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="section-title">
-                    <h2>News & Updates</h2>
-                    <p>What's New with LexCon</p>
-                </div>
-
-            </div>
-            <div class="row g-4"> -->
-                <!-- News Card 1 -->
-                <!-- <div class="col-lg-4 col-md-6">
-                    <div class="card shadow-sm border-0 news-card">
-                        <div class="card-img-container">
-                            <img src="{{ asset('images/hero-bg1.jpg') }}" class="card-img-top" alt="News Image">
-                            <div class="overlay-content">
-                                <h5 class="card-title">Celebrating Excellence: Mr. Madhura Loku Kaluge Named Pearson </h5>
-                                <p class="card-text" >Celebrating excellence and innovation in education with Mr. Madhura Loku Kaluge being named Pearson Edexcel Innovator of the Year.</p>
-                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- News Card 2 -->
-                <!-- <div class="col-lg-4 col-md-6">
-                    <div class="card shadow-sm border-0 news-card">
-                        <div class="card-img-container">
-                            <img src="{{ asset('images/hero-bg2.jpg') }}" class="card-img-top" alt="News Image">
-                            <div class="overlay-content">
-                                <h5 class="card-title">Lyceum Nugegoda 2025: A Dazzling Display of Creativity at Lyceum Nugegoda</h5>
-                                <p class="card-text">A dazzling display of creativity and talent at Lyceum Nugegoda, showcasing the skills of our students in various fields.</p>
-                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- News Card 3 -->
-                <!-- <div class="col-lg-4 col-md-6">
-                    <div class="card shadow-sm border-0 news-card">
-                        <div class="card-img-container">
-                            <img src="{{ asset('images/hero-bg3.jpg') }}" class="card-img-top" alt="News Image">
-                            <div class="overlay-content">
-                                <h5 class="card-title">"Knots for Life" Workshop Empowers Young Learners at Lyceum International School, Nugegoda</h5>
-                                <p class="card-text">The "Knots for Life" workshop inspired young learners to explore creativity and skills through unique hands-on experiences.</p>
-                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- More News Cards -->
-            <!-- </div>
-            <div class="text-center mt-4">
-                <a href="#" class="btn btn-light btn-sm">View All News</a>
-            </div>
-        </div>
-    </section> -->
+   
 <section class="news-updates py-5">
     <div class="container">
         <div class="row mb-4">
