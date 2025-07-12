@@ -46,7 +46,7 @@
                         <a class="nav-link" href="#programs">Programs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="{{ url('/contact') }}">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#news">News & Updates</a>
