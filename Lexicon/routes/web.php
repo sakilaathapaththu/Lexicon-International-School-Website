@@ -7,6 +7,9 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\HomeController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,6 +24,10 @@ use App\Http\Controllers\GalleryController;
 Route::get('/', function () {
     return view('home.home');
 });
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+
 
 
 Route::get('/about', function () {
