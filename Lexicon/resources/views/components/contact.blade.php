@@ -351,7 +351,7 @@
 <section class="map-section">
     <div class="container-fluid p-0">
         <div class="map-container" data-aos="fade-up">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.798467590949!2d79.86131181477!3d6.9270785951089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25963120b1509%3A0x2db2c18a68712863!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1642658523789!5m2!1sen!2slk" 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1788.2754538050253!2d80.35283471613899!3d7.498722028655209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae33a0f43dab9cb%3A0xfc06f55faa28b399!2sLexicon%20International%20School!5e1!3m2!1sen!2slk!4v1752359421630!5m2!1sen!2slk" 
                     width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
