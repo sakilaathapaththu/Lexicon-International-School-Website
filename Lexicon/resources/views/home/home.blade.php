@@ -264,8 +264,8 @@
         <div class="container">
             <div class="row mb-4">
                 <div class="section-title">
-                    <h2>What's New with Lyceum</h2>
-                    <p>News & Updates</p>
+                    <h2>News & Updates</h2>
+                    <p>What's New with LexCon</p>
                 </div>
 
             </div>
