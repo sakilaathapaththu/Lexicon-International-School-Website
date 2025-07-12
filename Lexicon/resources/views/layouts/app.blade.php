@@ -12,6 +12,10 @@
     @yield('styles')
     
     <style>
+        body {
+            padding-top: 70px; /* Add top padding to prevent content from hiding behind the fixed navbar */
+        }
+
         .dropdown:hover .dropdown-menu {
             display: block;
         }
@@ -27,8 +31,8 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="d-flex justify-content-between align-items-center py-3 px-4 mx-auto" style="max-width: 1200px;">
+    <!-- Fixed Navigation Bar -->
+    <nav class="fixed-top bg-white d-flex justify-content-between align-items-center py-3 px-4 shadow-sm" style="max-width: 100%; z-index: 1030;">
         <div style="font-size: 1.5rem; font-weight: bold; color: #e74c3c;">
             LexCon International School
         </div>
@@ -49,14 +53,28 @@
             <li><a href="#contact" class="text-decoration-none text-dark fw-medium">Contact</a></li>
             <li><a href="#news" class="text-decoration-none text-dark fw-medium">News & Updates</a></li>
         </ul>
-        <a href="#apply" class="btn btn-danger rounded-pill fw-medium px-4 py-2">Apply Now</a>
+
     </nav>
 
     @yield('content')
 
     @yield('scripts')
 
-    <!-- Bootstrap JS Bundle (optional, if you need JS features like dropdowns) -->
+    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Footer -->
+<footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+        <p class="mb-2">© 2025 LexCon International School. All Rights Reserved.</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="#facebook" class="text-white text-decoration-none">Facebook</a>
+            <a href="#twitter" class="text-white text-decoration-none">Twitter</a>
+            <a href="#instagram" class="text-white text-decoration-none">Instagram</a>
+            <a href="#privacy" class="text-white text-decoration-none">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>

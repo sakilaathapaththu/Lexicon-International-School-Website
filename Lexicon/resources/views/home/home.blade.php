@@ -18,7 +18,7 @@
                 <div class="col-lg-8">
                     <h1 class="display-4 fw-bold mb-4 hero-title">Welcome to LexCon International School</h1>
                     <p class="lead mb-4 hero-subtitle">Empowering minds, shaping futures through innovative education and global perspectives</p>
-                    <a href="#programs" class="btn btn-light btn-lg px-4 py-2 hero-btn">Explore Programs</a>
+                    <a href="{{ url('/admissions') }}" class="btn btn-light btn-lg px-4 py-2 hero-btn">Apply Now</a>
                 </div>
             </div>
         </div>
@@ -162,221 +162,221 @@
         </div>
     </section>
 
-<!-- Academic Programs -->
-<section class="programs py-5" id="programs">
-    <div class="container">
-        <div class="row mb-4">
-            <div class="col-lg-8 mx-auto text-center">
+    <!-- Academic Programs -->
+    <section class="programs py-5" id="programs">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="section-title">
+                        <h2>Academic Programs</h2>
+                        <p>Advanced curriculum preparing students for higher education. Specialized programs for university preparation. Foundation learning with focus on core subjects and character development
+                        </p>
+                        <!-- <a href="#" class="btn btn-outline-primary mt-3">READ MORE</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Primary Education - Big Box -->
+                <div class="col-lg-8">
+                    <div class="program-card h-100">
+                        <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
+                        <div class="program-overlay red-overlay">
+                            <div class="program-content" style="color: white;">
+                                <div class="program-number">1</div>
+                                <h3 class="program-title">Primary Education</h3>
+                                <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
+                                <a href="#" class="btn btn-warning btn-sm">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Education - Small Box Right -->
+                <div class="col-lg-4">
+                    <div class="program-card h-100">
+                        <div class="program-bg secondary-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
+                        <div class="program-overlay blue-overlay">
+                            <div class="program-content" style="color: white;">
+                                <div class="program-number">2</div>
+                                <h3 class="program-title">Secondary Education</h3>
+                                <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
+                                <ul class="program-features">
+                                    <li><i class="fas fa-check"></i> English & Mathematics</li>
+                                    <li><i class="fas fa-check"></i> Science & Social Studies</li>
+                                    <li><i class="fas fa-check"></i> Arts & Physical Education</li>
+                                    <li><i class="fas fa-check"></i> Character Development</li>
+                                </ul>
+                                <a href="#" class="btn btn-warning btn-sm">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Level (Left Small Box) -->
+                <div class="col-lg-6">
+                    <div class="program-card h-100">
+                        <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
+                        <div class="program-overlay dark-overlay">
+                            <div class="program-content" style="color: white;">
+                                <div class="program-number">3</div>
+                                <h3 class="program-title">Advanced Level</h3>
+                                <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
+                                <ul class="program-features">
+                                    <li><i class="fas fa-check"></i> English & Mathematics</li>
+                                    <li><i class="fas fa-check"></i> Science & Social Studies</li>
+                                    <li><i class="fas fa-check"></i> Arts & Physical Education</li>
+                                    <li><i class="fas fa-check"></i> Character Development</li>
+                                </ul>
+                                <a href="#" class="btn btn-warning btn-sm">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Level (Right Small Box) -->
+                <div class="col-lg-6">
+                    <div class="program-card h-100">
+                        <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg2.jpg') }}');"></div>
+                        <div class="program-overlay orange-overlay">
+                            <div class="program-content" style="color: white;">
+                                <div class="program-number">4</div>
+                                <h3 class="program-title">Advanced Level</h3>
+                                <p class="program-subtitle">Specialized training with focus on advanced concepts and practical applications</p>
+                                <ul class="program-features">
+                                    <li><i class="fas fa-check"></i> Specialized Subjects</li>
+                                    <li><i class="fas fa-check"></i> Practical Applications</li>
+                                    <li><i class="fas fa-check"></i> Higher Mathematics</li>
+                                    <li><i class="fas fa-check"></i> Science & Social Studies</li>
+                                </ul>
+                                <a href="#" class="btn btn-warning btn-sm">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- News Cards -->
+    <section class="news-updates py-5">
+        <div class="container">
+            <div class="row mb-4">
                 <div class="section-title">
-                    <h2>Academic Programs</h2>
-                    <p>Advanced curriculum preparing students for higher education. Specialized programs for university preparation. Foundation learning with focus on core subjects and character development
-                    </p>
-                    <!-- <a href="#" class="btn btn-outline-primary mt-3">READ MORE</a> -->
+                    <h2>What's New with Lyceum</h2>
+                    <p>News & Updates</p>
                 </div>
+
+            </div>
+            <div class="row g-4">
+                <!-- News Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm border-0 news-card">
+                        <div class="card-img-container">
+                            <img src="{{ asset('images/hero-bg1.jpg') }}" class="card-img-top" alt="News Image">
+                            <div class="overlay-content">
+                                <h5 class="card-title">Celebrating Excellence: Mr. Madhura Loku Kaluge Named Pearson </h5>
+                                <p class="card-text" >Celebrating excellence and innovation in education with Mr. Madhura Loku Kaluge being named Pearson Edexcel Innovator of the Year.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm border-0 news-card">
+                        <div class="card-img-container">
+                            <img src="{{ asset('images/hero-bg2.jpg') }}" class="card-img-top" alt="News Image">
+                            <div class="overlay-content">
+                                <h5 class="card-title">Lyceum Nugegoda 2025: A Dazzling Display of Creativity at Lyceum Nugegoda</h5>
+                                <p class="card-text">A dazzling display of creativity and talent at Lyceum Nugegoda, showcasing the skills of our students in various fields.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm border-0 news-card">
+                        <div class="card-img-container">
+                            <img src="{{ asset('images/hero-bg3.jpg') }}" class="card-img-top" alt="News Image">
+                            <div class="overlay-content">
+                                <h5 class="card-title">"Knots for Life" Workshop Empowers Young Learners at Lyceum International School, Nugegoda</h5>
+                                <p class="card-text">The "Knots for Life" workshop inspired young learners to explore creativity and skills through unique hands-on experiences.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More News Cards -->
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-light btn-sm">View All News</a>
             </div>
         </div>
+    </section>
 
-        <div class="row g-4">
-            <!-- Primary Education - Big Box -->
-            <div class="col-lg-8">
-                <div class="program-card h-100">
-                    <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
-                    <div class="program-overlay red-overlay">
-                        <div class="program-content" style="color: white;">
-                            <div class="program-number">1</div>
-                            <h3 class="program-title">Primary Education</h3>
-                            <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
-                            <a href="#" class="btn btn-warning btn-sm">Read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Secondary Education - Small Box Right -->
-            <div class="col-lg-4">
-                <div class="program-card h-100">
-                    <div class="program-bg secondary-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
-                    <div class="program-overlay blue-overlay">
-                        <div class="program-content" style="color: white;">
-                            <div class="program-number">2</div>
-                            <h3 class="program-title">Secondary Education</h3>
-                            <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
-                            <ul class="program-features">
-                                <li><i class="fas fa-check"></i> English & Mathematics</li>
-                                <li><i class="fas fa-check"></i> Science & Social Studies</li>
-                                <li><i class="fas fa-check"></i> Arts & Physical Education</li>
-                                <li><i class="fas fa-check"></i> Character Development</li>
-                            </ul>
-                            <a href="#" class="btn btn-warning btn-sm">Read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Advanced Level (Left Small Box) -->
-            <div class="col-lg-6">
-                <div class="program-card h-100">
-                    <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
-                    <div class="program-overlay dark-overlay">
-                        <div class="program-content" style="color: white;">
-                            <div class="program-number">3</div>
-                            <h3 class="program-title">Advanced Level</h3>
-                            <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
-                            <ul class="program-features">
-                                <li><i class="fas fa-check"></i> English & Mathematics</li>
-                                <li><i class="fas fa-check"></i> Science & Social Studies</li>
-                                <li><i class="fas fa-check"></i> Arts & Physical Education</li>
-                                <li><i class="fas fa-check"></i> Character Development</li>
-                            </ul>
-                            <a href="#" class="btn btn-warning btn-sm">Read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Advanced Level (Right Small Box) -->
-            <div class="col-lg-6">
-                <div class="program-card h-100">
-                    <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg2.jpg') }}');"></div>
-                    <div class="program-overlay orange-overlay">
-                        <div class="program-content" style="color: white;">
-                            <div class="program-number">4</div>
-                            <h3 class="program-title">Advanced Level</h3>
-                            <p class="program-subtitle">Specialized training with focus on advanced concepts and practical applications</p>
-                            <ul class="program-features">
-                                <li><i class="fas fa-check"></i> Specialized Subjects</li>
-                                <li><i class="fas fa-check"></i> Practical Applications</li>
-                                <li><i class="fas fa-check"></i> Higher Mathematics</li>
-                                <li><i class="fas fa-check"></i> Science & Social Studies</li>
-                            </ul>
-                            <a href="#" class="btn btn-warning btn-sm">Read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
- <!-- News Cards -->
-<section class="news-updates py-5">
+    <!-- Gallery Section -->
+    <section class="photo-gallery py-5 bg-light" id="gallery">
     <div class="container">
-        <div class="row mb-4">
-            <div class="section-title">
-                <h2>What's New with Lyceum</h2>
-                <p>News & Updates</p>
-            </div>
-
+        <div class="section-title text-center mb-4">
+        <h2>Gallery</h2>
+        <p>Explore moments from our vibrant school life and international events</p>
         </div>
         <div class="row g-4">
-            <!-- News Card 1 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm border-0 news-card">
-                    <div class="card-img-container">
-                        <img src="{{ asset('images/hero-bg1.jpg') }}" class="card-img-top" alt="News Image">
-                        <div class="overlay-content">
-                            <h5 class="card-title">Celebrating Excellence: Mr. Madhura Loku Kaluge Named Pearson </h5>
-                            <p class="card-text" >Celebrating excellence and innovation in education with Mr. Madhura Loku Kaluge being named Pearson Edexcel Innovator of the Year.</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                        </div>
-                    </div>
-                </div>
+        <!-- 12 images -->
+        <div class="col-5th">
+            <div class="gallery-item">
+            <img src="images/hero-bg1.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 1">
             </div>
-
-            <!-- News Card 2 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm border-0 news-card">
-                    <div class="card-img-container">
-                        <img src="{{ asset('images/hero-bg2.jpg') }}" class="card-img-top" alt="News Image">
-                        <div class="overlay-content">
-                            <h5 class="card-title">Lyceum Nugegoda 2025: A Dazzling Display of Creativity at Lyceum Nugegoda</h5>
-                            <p class="card-text">A dazzling display of creativity and talent at Lyceum Nugegoda, showcasing the skills of our students in various fields.</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- News Card 3 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm border-0 news-card">
-                    <div class="card-img-container">
-                        <img src="{{ asset('images/hero-bg3.jpg') }}" class="card-img-top" alt="News Image">
-                        <div class="overlay-content">
-                            <h5 class="card-title">"Knots for Life" Workshop Empowers Young Learners at Lyceum International School, Nugegoda</h5>
-                            <p class="card-text">The "Knots for Life" workshop inspired young learners to explore creativity and skills through unique hands-on experiences.</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- More News Cards -->
         </div>
-        <div class="text-center mt-4">
-            <a href="#" class="btn btn-light btn-sm">View All News</a>
+        <div class="col-5th">
+            <div class="gallery-item">
+            <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 2">
+            </div>
+        </div>
+        <div class="col-5th">
+            <div class="gallery-item">
+            <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 3">
+            </div>
+        </div>
+        <div class="col-5th">
+            <div class="gallery-item">
+            <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 4">
+            </div>
+        </div>
+        <div class="col-5th">
+            <div class="gallery-item">
+            <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 5">
+            </div>
+        </div>
+
+        <!-- Next row -->
+        <div class="col-5th">
+            <div class="gallery-item">
+            <img src="images/hero-bg1.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 6">
+            </div>
+        </div>
+        <div class="col-5th">
+            <div class="gallery-item">
+            <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 7">
+            </div>
+        </div>
+        <div class="col-5th">
+            <div class="gallery-item">
+            <img src="images/hero-bg1.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 8">
+            </div>
+        </div>
+            <div class="text-center mt-4">
+            <a href="#" class="btn btn-light btn-sm">View All </a>
         </div>
     </div>
-</section>
-
-<!-- Gallery Section -->
-<section class="photo-gallery py-5 bg-light" id="gallery">
-  <div class="container">
-    <div class="section-title text-center mb-4">
-      <h2>Gallery</h2>
-      <p>Explore moments from our vibrant school life and international events</p>
-    </div>
-    <div class="row g-4">
-      <!-- 12 images -->
-      <div class="col-5th">
-        <div class="gallery-item">
-          <img src="images/hero-bg1.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 1">
-        </div>
-      </div>
-      <div class="col-5th">
-        <div class="gallery-item">
-          <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 2">
-        </div>
-      </div>
-      <div class="col-5th">
-        <div class="gallery-item">
-          <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 3">
-        </div>
-      </div>
-      <div class="col-5th">
-        <div class="gallery-item">
-          <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 4">
-        </div>
-      </div>
-      <div class="col-5th">
-        <div class="gallery-item">
-          <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 5">
-        </div>
-      </div>
-
-      <!-- Next row -->
-      <div class="col-5th">
-        <div class="gallery-item">
-          <img src="images/hero-bg1.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 6">
-        </div>
-      </div>
-      <div class="col-5th">
-        <div class="gallery-item">
-          <img src="images/hero-bg2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 7">
-        </div>
-      </div>
-      <div class="col-5th">
-        <div class="gallery-item">
-          <img src="images/hero-bg1.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 8">
-        </div>
-      </div>
-        <div class="text-center mt-4">
-        <a href="#" class="btn btn-light btn-sm">View All </a>
-    </div>
-  </div>
-  
-</section>
+    
+    </section>
 
 
 
