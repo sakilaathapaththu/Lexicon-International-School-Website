@@ -8,6 +8,7 @@ use App\Http\Controllers\CareerController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ContactController; // Add this import
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,8 @@ use App\Http\Controllers\ContactController; // Add this import
 Route::get('/', function () {
     return view('home.home');
 });
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/about', function () {
     return view('components.about');
