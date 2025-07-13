@@ -103,29 +103,7 @@
             </div>
         </section>
 
-    <!-- Mission Section -->
-    <!-- <section class="mission py-5" id="about">
-        <div class="container">
-            <h2 class="text-center mb-5 display-5 fw-bold">Our Mission</h2>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="h4 mb-3 text-primary">Excellence in Education</h3>
-                    <p class="mb-3">We are committed to providing world-class education that prepares students for success in an increasingly interconnected world. Our innovative approach combines traditional academic excellence with modern teaching methodologies.</p>
-                    <p class="mb-4">Through personalized learning experiences and a diverse curriculum, we nurture critical thinking, creativity, and global citizenship in every student.</p>
-                    <a href="#" class="btn btn-outline-primary">Learn More</a>
-                </div>
-                <div class="col-lg-6">
-                    <div class="bg-light p-5 rounded shadow-sm text-center">
-                        <h3 class="h5 mb-3 text-primary">Inspiring Excellence</h3>
-                        <p class="text-muted">Classroom interaction and engagement</p>
-                        <div class="bg-primary rounded-circle mx-auto" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-graduation-cap text-white fs-2"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+    
 
     <!-- Impact Section -->
     <section class="impact py-5 bg-light" data-aos="zoom-in-up">
@@ -184,7 +162,7 @@
                         <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
                         <div class="program-overlay red-overlay">
                             <div class="program-content" style="color: white;">
-                                <div class="program-number">1</div>
+                                <!-- <div class="program-number">1</div> -->
                                 <h3 class="program-title">Primary Education</h3>
                                 <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
                                 <a href="#" class="btn btn-warning btn-sm">Read more</a>
@@ -199,7 +177,7 @@
                         <div class="program-bg secondary-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
                         <div class="program-overlay blue-overlay">
                             <div class="program-content" style="color: white;">
-                                <div class="program-number">2</div>
+                                <!-- <div class="program-number">2</div> -->
                                 <h3 class="program-title">Secondary Education</h3>
                                 <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
                                 <ul class="program-features">
@@ -220,7 +198,7 @@
                         <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
                         <div class="program-overlay dark-overlay">
                             <div class="program-content" style="color: white;">
-                                <div class="program-number">3</div>
+                                <!-- <div class="program-number">3</div> -->
                                 <h3 class="program-title">Advanced Level</h3>
                                 <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
                                 <ul class="program-features">
@@ -241,7 +219,7 @@
                         <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg2.jpg') }}');"></div>
                         <div class="program-overlay orange-overlay">
                             <div class="program-content" style="color: white;">
-                                <div class="program-number">4</div>
+                                <!-- <div class="program-number">4</div> -->
                                 <h3 class="program-title">Advanced Level</h3>
                                 <p class="program-subtitle">Specialized training with focus on advanced concepts and practical applications</p>
                                 <ul class="program-features">
@@ -261,39 +239,81 @@
     </section>
     
 <!-- News Cards -->
-<section class="news-updates py-5"data-aos="fade-up" >
+<section class="news-updates py-5" data-aos="fade-up">
     <div class="container">
         <div class="row mb-4">
-            <div class="section-title">
+            <div class="section-title text-center">
                 <h2>News & Updates</h2>
-                <p>What's New with LexCon</p>
+                <p>Latest updates from LexCon International School</p>
             </div>
         </div>
 
-        <div class="row g-4">
-            @forelse ($posts as $post)
-                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="card shadow-sm border-0 news-card">
-                        <div class="card-img-container">
-                            <img src="{{ asset($post->featured_image) }}" class="card-img-top" alt="News Image">
-                            <div class="overlay-content">
-                                <h5 class="card-title">{{ \Illuminate\Support\Str::limit($post->title, 70) }}</h5>
-                                <p class="card-text">{{ \Illuminate\Support\Str::limit(strip_tags($post->content), 120) }}</p>
-                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+        <!-- Tabs for news/blog -->
+        <ul class="nav nav-tabs justify-content-center mb-4">
+            <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#newsTab">News</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#blogTab">Blogs</button>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <!-- News Tab -->
+            <div class="tab-pane fade show active" id="newsTab">
+                <div class="row g-4">
+                    @forelse ($posts->where('type', 'news') as $post)
+                        @php $firstImage = $post->images->first()->image_path ?? 'images/default-news.jpg'; @endphp
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card shadow-sm h-100">
+                                <img src="{{ asset($firstImage) }}" class="card-img-top" style="height: 220px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ \Str::limit($post->title, 60) }}</h5>
+                                    <p class="card-text">{{ \Str::limit(strip_tags($post->content), 100) }}</p>
+                                   
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    @empty
+                        <p class="text-muted text-center">No news posts found.</p>
+                    @endforelse
                 </div>
-            @empty
-                <p class="text-muted text-center">No recent news available.</p>
-            @endforelse
+            </div>
+
+            <!-- Blog Tab -->
+            <div class="tab-pane fade" id="blogTab">
+                <div class="row g-4">
+                    @forelse ($posts->where('type', 'blog') as $post)
+                        @php $firstImage = $post->images->first()->image_path ?? 'images/default-news.jpg'; @endphp
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card shadow-sm h-100">
+                                <img src="{{ asset($firstImage) }}" class="card-img-top" style="height: 220px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ \Str::limit($post->title, 60) }}</h5>
+                                    <p class="card-text">{{ \Str::limit(strip_tags($post->content), 100) }}</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    @empty
+                        <p class="text-muted text-center">No blog posts found.</p>
+                    @endforelse
+                </div>
+            </div>
         </div>
 
+        @if($posts->count())
         <div class="text-center mt-4">
-            <a href="{{ url('/posts') }}" class="btn btn-light btn-sm">View All News</a>
+
+            <a href="{{ url('/news') }}" class="btn btn-light btn-sm">View All News</a>
+
         </div>
+        @endif
     </div>
 </section>
+
+
+
 
     
 

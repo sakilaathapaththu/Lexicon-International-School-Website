@@ -20,20 +20,6 @@
     </div>
 </section>
 
-<!-- Gallery Categories -->
-<section class="gallery-categories">
-    <div class="container">
-        <div class="category-filters">
-            <button class="filter-btn active" data-filter="all">ALL</button>
-            <button class="filter-btn" data-filter="photography">PHOTOGRAPHY</button>
-            <button class="filter-btn" data-filter="travel">TRAVEL</button>
-            <button class="filter-btn" data-filter="nature">NATURE</button>
-            <button class="filter-btn" data-filter="fashion">FASHION</button>
-            <button class="filter-btn" data-filter="lifestyle">LIFE STYLE</button>
-        </div>
-    </div>
-</section>
-
 <!-- Gallery Grid -->
 <section class="gallery-grid">
     <div class="container">
@@ -57,21 +43,31 @@
         </div>
 
         <!-- Modal for this group -->
-        <div class="modal fade" id="modal-{{ $slug }}" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl">
-                <div class="modal-content bg-dark">
-                    <div class="modal-header border-0">
-                        <h5 class="modal-title text-white">{{ $title ?? 'Gallery Group' }}</h5>
+<div class="modal fade" id="modal-{{ $slug }}" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- not fullscreen -->
+        <div class="modal-content border-0 bg-transparent">
+            <div class="modal-body p-0 position-relative">
+
+                <!-- Image display with overlay -->
+                <div class="position-relative w-100">
+                    <!-- Actual Image -->
+                    <img src="{{ asset($firstImage->image_path) }}" alt="Gallery Image"
+                         class="img-fluid w-100" style="object-fit: cover; border-radius: 8px;">
+
+                    <!-- Title (top-left) and Close Button (top-right) overlaying image -->
+                    <div class="position-absolute top-0 start-0 w-100 d-flex justify-content-between align-items-start p-3 z-3">
+                        <h5 class="text-white bg-dark bg-opacity-150 px-3 py-2 rounded m-0">
+                            {{ $title ?? 'Gallery Group' }}
+                        </h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex flex-wrap gap-3 justify-content-center">
-                        @foreach ($images as $img)
-                            <img src="{{ asset($img->image_path) }}" alt="Grouped Image" class="img-fluid rounded" style="max-height: 300px;">
-                        @endforeach
-                    </div>
                 </div>
+
             </div>
         </div>
+    </div>
+</div>
+
     @empty
         <p class="text-center text-muted">No gallery images available.</p>
     @endforelse
