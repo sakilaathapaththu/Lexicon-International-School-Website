@@ -7,8 +7,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\GalleryController;
-use App\Http\Controllers\HomeController;
-
+use App\Http\Controllers\ContactController; // Add this import
 
 /*
 |--------------------------------------------------------------------------
@@ -25,11 +24,6 @@ Route::get('/', function () {
     return view('home.home');
 });
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
-
-
-
-
 Route::get('/about', function () {
     return view('components.about');
 });
@@ -37,12 +31,21 @@ Route::get('/about', function () {
 Route::get('/advisory', function () {
     return view('components.advisory');
 });
-Route::get('/admissions', function () {
-    return view('components.admissions');
+
+Route::get('/founder', function () {
+    return view('components.founder');
 });
-Route::get('/gallery', function () {
-    return view('components.gallery');
+
+Route::get('/director', function () {
+    return view('components.director');
 });
+
+// Add Contact Routes
+Route::get('/contact', function () {
+    return view('components.contact');
+})->name('contact');
+
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
 // Admin Login Routes (public)
 Route::get('/admin/login', [AdminLoginController::class, 'showLoginForm'])->name('admin.login');
@@ -65,7 +68,6 @@ Route::middleware(['auth:admin', 'admin.super'])->prefix('admin')->group(functio
     Route::post('/admins/create', [AdminController::class, 'store'])->name('admin.create');
     Route::put('/admin/update/{id}', [AdminController::class, 'update'])->name('admin.update');
     Route::delete('/admin/delete/{id}', [AdminController::class, 'destroy'])->name('admin.delete');
-
 });
 
 Route::middleware(['auth:admin'])->prefix('admin')->group(function () {
@@ -74,7 +76,6 @@ Route::middleware(['auth:admin'])->prefix('admin')->group(function () {
     Route::post('/careers', [CareerController::class, 'store'])->name('careers.store');
     Route::delete('/careers/{career}', [CareerController::class, 'destroy'])->name('careers.delete');
     Route::put('/careers/{career}', [CareerController::class, 'update'])->name('careers.update');
-
 });
 
 Route::middleware(['auth:admin'])->prefix('admin')->group(function () {
@@ -84,7 +85,6 @@ Route::middleware(['auth:admin'])->prefix('admin')->group(function () {
     Route::post('/posts/upload', [PostController::class, 'uploadImage'])->name('posts.upload');
     Route::put('/posts/{post}', [PostController::class, 'update'])->name('posts.update');
     Route::delete('/posts/{post}', [PostController::class, 'destroy'])->name('posts.destroy');
-
 });
 
 Route::middleware(['auth:admin'])->prefix('admin')->group(function () {
@@ -92,4 +92,12 @@ Route::middleware(['auth:admin'])->prefix('admin')->group(function () {
     Route::get('/gallery/create', [GalleryController::class, 'create'])->name('gallery.create');
     Route::post('/gallery', [GalleryController::class, 'store'])->name('gallery.store');
     Route::delete('/gallery/{gallery}', [GalleryController::class, 'destroy'])->name('gallery.destroy');
+});
+
+// Admin routes for managing contact submissions
+Route::middleware(['auth:admin'])->prefix('admin')->group(function () {
+    Route::get('/contacts', [ContactController::class, 'index'])->name('contacts.index');
+    Route::get('/contacts/{contact}', [ContactController::class, 'show'])->name('contacts.show');
+    Route::delete('/contacts/{contact}', [ContactController::class, 'destroy'])->name('contacts.destroy');
+    Route::patch('/contacts/{contact}/toggle-status', [ContactController::class, 'toggleStatus'])->name('contacts.toggleStatus');
 });
