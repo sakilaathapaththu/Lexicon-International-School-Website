@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'About Us - Lexicon International School')
+@section('title', 'Advisory Council - Lexicon International School')
 
 @section('content')
 <head>
@@ -63,7 +63,7 @@
                         </div>
                     </div>
                     <h3 class="staff-name">Mr. Michael Chen</h3>
-                    <p class="staff-title">Deputy Principal</p>
+                    <p class="staff-title">Vice Principal</p>
                     <p class="staff-description">
                         Supporting academic operations and student affairs with expertise in curriculum development and international education standards.
                     </p>
