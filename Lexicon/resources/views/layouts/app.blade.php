@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     
     @yield('styles')
+    <style>
+        .text-primary {
+    color: var(--cool-blue) !important;
+}
+    </style>
 
 </head>
 <body>
