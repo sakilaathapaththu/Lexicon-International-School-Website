@@ -14,26 +14,12 @@
 </head>
 <body>
 
-<!-- Breadcrumb -->
-<nav aria-label="breadcrumb" class="bg-light py-2 px-3 rounded mb-4">
-    <ol class="breadcrumb mb-0">
-        <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">About the School</li>
-    </ol>
-</nav>
-
 <!-- Hero Section -->
     <section class="bg-primary text-white py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-8">
                     <h1 class="display-4 fw-bold mb-3">About Lexicon International School</h1>
-                    <p class="lead mb-4">Shaping tomorrow's leaders through innovative education, global perspectives, and unwavering commitment to excellence.</p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <span class="badge bg-light text-primary fs-6 px-3 py-2 rounded-pill">Est. 2010</span>
-                        <span class="badge bg-light text-primary fs-6 px-3 py-2 rounded-pill">International Curriculum</span>
-                        <span class="badge bg-light text-primary fs-6 px-3 py-2 rounded-pill">Global Community</span>
-                    </div>
                 </div>
                 <div class="col-lg-4 text-center">
                     <div class="icon-circle-lg bg-white d-inline-flex align-items-center justify-content-center rounded-circle" data-aos="zoom-in" data-aos-delay="200">
@@ -587,96 +573,6 @@
         </div>
     </section>
 
-    <!-- Leadership Section
-    <section class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-primary mb-3">Our Leadership</h2>
-                <p class="lead text-muted">Meet the visionary leaders guiding our educational journey</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card border-0 shadow-sm text-center hover-lift">
-                        <div class="card-body p-4">
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" 
-                                alt="Dr. Sarah Johnson" class="leadership-img">
-                            <h5 class="card-title text-primary fw-bold">Dr. Sarah Johnson</h5>
-                            <p class="text-muted mb-2 fw-medium">Principal</p>
-                            <p class="card-text small text-muted">Educational leader with 20+ years of experience in international education and curriculum development.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card border-0 shadow-sm text-center hover-lift">
-                        <div class="card-body p-4">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                                alt="Prof. Michael Chen" class="leadership-img">
-                            <h5 class="card-title text-primary fw-bold">Prof. Michael Chen</h5>
-                            <p class="text-muted mb-2 fw-medium">Academic Director</p>
-                            <p class="card-text small text-muted">Renowned educator specializing in innovative teaching methodologies and student assessment strategies.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card border-0 shadow-sm text-center hover-lift">
-                        <div class="card-body p-4">
-                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1561&q=80" 
-                                alt="Ms. Emma Thompson" class="leadership-img">
-                            <h5 class="card-title text-primary fw-bold">Ms. Emma Thompson</h5>
-                            <p class="text-muted mb-2 fw-medium">Student Affairs Director</p>
-                            <p class="card-text small text-muted">Dedicated professional focusing on student wellbeing, counseling, and extracurricular development.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- School Events Gallery Section -->
-    <!-- <section class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-primary mb-3" data-aos="fade-up">School Events & Activities</h2>
-                <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">Memorable moments that shape our school community</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-                    <div class="image-overlay">
-                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                            alt="Graduation Ceremony" class="img-fluid event-img w-100">
-                        <div class="overlay-content">
-                            <h5 class="fw-bold">Graduation Ceremony</h5>
-                            <p class="mb-0 small">Celebrating achievements & new beginnings</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row g-3">
-                        <div class="col-12" data-aos="fade-left" data-aos-delay="300">
-                            <div class="image-overlay">
-                                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                                    alt="Science Fair" class="img-fluid small-event-img w-100">
-                                <div class="overlay-content">
-                                    <h6 class="fw-bold">Science Fair</h6>
-                                    <p class="mb-0 small">Innovation showcase</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12" data-aos="fade-left" data-aos-delay="400">
-                            <div class="image-overlay">
-                                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" 
-                                    alt="Cultural Festival" class="img-fluid small-event-img w-100">
-                                <div class="overlay-content">
-                                    <h6 class="fw-bold">Cultural Festival</h6>
-                                    <p class="mb-0 small">Celebrating diversity</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- Call to Action Section -->
     <section class="py-5">
@@ -719,120 +615,7 @@
         </div>
     </section>
 
-    <!-- Virtual Tour Section -->
-    <!-- <section class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-primary mb-3" data-aos="fade-up">Take a Virtual Tour</h2>
-                <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">Experience our campus from anywhere in the world</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card border-0 shadow-sm hover-lift">
-                        <div class="image-overlay">
-                            <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" 
-                                alt="Smart Classrooms" class="virtual-tour-img w-100">
-                            <div class="overlay-content">
-                                <h5 class="fw-bold">Smart Classrooms</h5>
-                                <p class="mb-0 small">Interactive learning spaces</p>
-                            </div>
-                        </div>
-                        <div class="card-body text-center">
-                            <a href="#" class="btn btn-primary btn-sm">
-                                <i class="fas fa-play me-2"></i>Start Tour
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card border-0 shadow-sm hover-lift">
-                        <div class="image-overlay">
-                            <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                                alt="Research Labs" class="virtual-tour-img w-100">
-                            <div class="overlay-content">
-                                <h5 class="fw-bold">Research Labs</h5>
-                                <p class="mb-0 small">Advanced scientific equipment</p>
-                            </div>
-                        </div>
-                        <div class="card-body text-center">
-                            <a href="#" class="btn btn-primary btn-sm">
-                                <i class="fas fa-play me-2"></i>Start Tour
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card border-0 shadow-sm hover-lift">
-                        <div class="image-overlay">
-                            <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1586&q=80" 
-                                alt="Campus Grounds" class="virtual-tour-img w-100">
-                            <div class="overlay-content">
-                                <h5 class="fw-bold">Campus Grounds</h5>
-                                <p class="mb-0 small">Beautiful outdoor spaces</p>
-                            </div>
-                        </div>
-                        <div class="card-body text-center">
-                            <a href="#" class="btn btn-primary btn-sm">
-                                <i class="fas fa-play me-2"></i>Start Tour
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Additional School Life Section -->
-    <!-- <section class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-primary mb-3" data-aos="fade-up">More From Our School Life</h2>
-                <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">Capturing the essence of our educational community</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="image-overlay">
-                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1322&q=80" 
-                            alt="Library Study" class="img-fluid gallery-image w-100" style="height: 200px;">
-                        <div class="overlay-content">
-                            <h6 class="fw-bold">Modern Library</h6>
-                            <p class="mb-0 small">Quiet study spaces</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="image-overlay">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                            alt="Sports Activities" class="img-fluid gallery-image w-100" style="height: 200px;">
-                        <div class="overlay-content">
-                            <h6 class="fw-bold">Sports Complex</h6>
-                            <p class="mb-0 small">Athletic excellence</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="image-overlay">
-                        <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" 
-                            alt="Art Studio" class="img-fluid gallery-image w-100" style="height: 200px;">
-                        <div class="overlay-content">
-                            <h6 class="fw-bold">Art Studio</h6>
-                            <p class="mb-0 small">Creative expression</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                    <div class="image-overlay">
-                        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
-                            alt="Cafeteria" class="img-fluid gallery-image w-100" style="height: 200px;">
-                        <div class="overlay-content">
-                            <h6 class="fw-bold">Cafeteria</h6>
-                            <p class="mb-0 small">Nutritious meals</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+ 
 @endsection
 
 @section('styles')
@@ -866,34 +649,6 @@
             const observerOptions = {
                 threshold: 0.7
             };
-
-            // const observer = new IntersectionObserver((entries) => {
-            //     entries.forEach(entry => {
-            //         if (entry.isIntersecting) {
-            //             const target = entry.target;
-            //             const text = target.textContent;
-            //             const number = parseInt(text.replace(/\D/g, ''));
-            //             const suffix = text.replace(/\d/g, '');
-                        
-            //             let current = 0;
-            //             const increment = number / 50;
-            //             const timer = setInterval(() => {
-            //                 current += increment;
-            //                 if (current >= number) {
-            //                     current = number;
-            //                     clearInterval(timer);
-            //                 }
-            //                 target.textContent = Math.floor(current) + suffix;
-            //             }, 30);
-                        
-            //             observer.unobserve(target);
-            //         }
-            //     });
-            // }, observerOptions);
-
-            // stats.forEach(stat => {
-            //     observer.observe(stat);
-            // });
         });
     </script>
 </body>

@@ -16,7 +16,7 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 <span class="brand-text">LexiCon International School</span>
@@ -46,18 +46,78 @@
                         <a class="nav-link" href="#programs">Programs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/contact') }}">Contact</a>
+                        <a class="nav-link" href="{{ url('/contact') }}">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/news') }}">News & Updates</a>
+                        <a class="nav-link" href="{{ url('/news') }}">News & Blog Updates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/careers') }}">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/gallery') }}">Photo Gallery</a>
                     </li>
                 </ul>
                 <div class="navbar-actions">
-                    <a href="#apply" class="btn btn-primary navbar-btn">Apply Now</a>
+                    <a href="{{ url('/admissions') }}" class="btn btn-primary navbar-btn">Apply Now</a>
                 </div>
             </div>
         </div>
-    </nav>
+    </nav> -->
+    <!-- Modern Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm bg-white" id="mainNavbar">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="{{ url('/') }}">
+            <i class="fas fa-school me-2"></i>LexiCon International School
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" href="{{ url('/') }}">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle {{ request()->is('about') ? 'active' : '' }}" href="#" role="button" data-bs-toggle="dropdown">
+                        About
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{{ url('/about') }}">About the School</a></li>
+                        <li><a class="dropdown-item" href="{{ url('/advisory') }}">Advisory Council</a></li>
+                        <li><a class="dropdown-item" href="{{ url('/founder') }}">Founder's Message</a></li>
+                        <li><a class="dropdown-item" href="{{ url('/director') }}">Director's Message</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#programs">Programs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/news') }}">News & Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/careers') }}">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/gallery') }}">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/contact') }}">Contact</a>
+                </li>
+            </ul>
+
+            <div class="d-flex">
+                <a href="{{ url('/admissions') }}" class="btn btn-primary rounded-pill px-4 shadow-sm">
+                    Apply Now
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
 
     <!-- Main Content Wrapper -->
     <div class="main-content">
@@ -184,5 +244,16 @@
     
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    window.addEventListener('scroll', function () {
+        const navbar = document.getElementById('mainNavbar');
+        if (window.scrollY > 20) {
+            navbar.classList.add('shadow-sm');
+        } else {
+            navbar.classList.remove('shadow-sm');
+        }
+    });
+</script>
+
 </body>
 </html>
