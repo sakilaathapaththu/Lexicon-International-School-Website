@@ -38,10 +38,20 @@ Route::get('/advisory', function () {
 Route::get('/founder', function () {
     return view('components.founder');
 });
+Route::get('/admissions', function () {
+    return view('components.admissions');
+});
 
 Route::get('/director', function () {
     return view('components.director');
 });
+Route::get('/news', function () {
+    return view('components.news');
+});
+Route::get('/gallery', function () {
+    return view('components.gallery');
+});
+
 
 // Add Contact Routes
 Route::get('/contact', function () {
