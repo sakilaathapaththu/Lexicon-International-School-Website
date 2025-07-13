@@ -15,12 +15,11 @@
 <body>
 
 <!-- Hero Section -->
-   
     <section class="hero-section">
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">About </h1>
-                 <h1 class="hero-title">Lexicon International School</h1>
+                <h1 class="hero-title">Lexicon International School</h1>
                 <!-- <p class="hero-subtitle">Lexicon International School</p> -->
                 <div class="hero-divider"></div>
             </div>
@@ -640,6 +639,17 @@
                     }
                 });
             });
+
+                    // Parallax effect for hero section (subtle)
+            let ticking = false;
+            function updateParallax() {
+                const scrolled = window.pageYOffset;
+                const hero = document.querySelector('.hero-section');
+                if (hero) {
+                    hero.style.transform = `translateY(${scrolled * 0.2}px)`;
+                }
+                ticking = false;
+            }
 
             // Add counter animation for statistics
             const stats = document.querySelectorAll('.bg-primary .display-4');
