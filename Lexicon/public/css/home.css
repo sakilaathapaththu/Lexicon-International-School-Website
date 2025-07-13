@@ -213,7 +213,7 @@
 
 /* Right Side */
 .right-side {
-    background-color: #071221;
+    background-color: #071221c6;
     color: #f0f4f8;
     flex: 1;
     padding: 3rem;
@@ -473,5 +473,19 @@
     width: 25%;
     padding: 0.5rem;
     float: left;
+}
+
+/* Animation initial state */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+
+/* Animation active state */
+.animate-on-scroll.animate-active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
