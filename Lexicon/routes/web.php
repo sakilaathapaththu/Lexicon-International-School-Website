@@ -46,9 +46,8 @@ Route::get('/admissions', function () {
 Route::get('/director', function () {
     return view('components.director');
 });
-Route::get('/news', function () {
-    return view('components.news');
-});
+
+Route::get('/news', [PostController::class, 'showNews'])->name('news');
 
 Route::get('/careers', [CareerController::class, 'showFrontend'])->name('careers.frontend');
 
