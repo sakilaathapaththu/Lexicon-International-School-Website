@@ -49,8 +49,14 @@ Route::get('/news', function () {
     return view('components.news');
 });
 
+Route::get('/careers', function () {
+    return view('components.career');
+});
+
+
 
 Route::get('/gallery', [GalleryController::class, 'showAllForFrontend'])->name('gallery.front');
+
 
 
 
