@@ -290,7 +290,7 @@
         </div>
 
         <div class="text-center mt-4">
-            <a href="{{ url('/posts') }}" class="btn btn-light btn-sm">View All News</a>
+            <a href="{{ url('/news') }}" class="btn btn-light btn-sm">View All News</a>
         </div>
     </div>
 </section>
