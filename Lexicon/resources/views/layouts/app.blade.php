@@ -11,59 +11,16 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     
     @yield('styles')
+    <style>
+        .text-primary {
+    color: var(--cool-blue) !important;
+}
+    </style>
 
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">
-                <span class="brand-text">LexiCon International School</span>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/') }}">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            About
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{ url('/about') }}">About the School</a></li>
-                            <li><a class="dropdown-item" href="{{ url('/advisory') }}">Advisory Council</a></li>
-                            <li><a class="dropdown-item" href="{{ url('/founder') }}">Founder's Message</a></li>
-                            <li><a class="dropdown-item" href="{{ url('/director') }}">Director's Message</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#programs">Programs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/contact') }}">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/news') }}">News & Blog Updates</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/careers') }}">Careers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/gallery') }}">Photo Gallery</a>
-                    </li>
-                </ul>
-                <div class="navbar-actions">
-                    <a href="{{ url('/admissions') }}" class="btn btn-primary navbar-btn">Apply Now</a>
-                </div>
-            </div>
-        </div>
-    </nav> -->
+    
     <!-- Modern Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm bg-white" id="mainNavbar">
     <div class="container">
