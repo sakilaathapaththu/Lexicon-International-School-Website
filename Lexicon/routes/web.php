@@ -48,12 +48,17 @@ Route::get('/director', function () {
 Route::get('/news', function () {
     return view('components.news');
 });
-Route::get('/gallery', function () {
-    return view('components.gallery');
-});
+
 Route::get('/careers', function () {
     return view('components.career');
 });
+
+
+
+Route::get('/gallery', [GalleryController::class, 'showAllForFrontend'])->name('gallery.front');
+
+
+
 
 // Add Contact Routes
 Route::get('/contact', function () {
