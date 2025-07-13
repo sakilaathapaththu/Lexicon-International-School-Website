@@ -14,8 +14,10 @@
     @foreach($posts as $post)
         <div class="col-md-4 mb-4">
             <div class="card h-100 position-relative">
-                @if($post->featured_image)
-                    <img src="{{ asset($post->featured_image) }}" class="card-img-top" alt="{{ $post->title }}">
+                @if($post->images->count())
+                    <img src="{{ asset($post->images->first()->image_path) }}" class="card-img-top" alt="{{ $post->title }}">
+                @else
+                    <img src="{{ asset('images/default-news.jpg') }}" class="card-img-top" alt="Default">
                 @endif
 
                 <!-- Edit icon -->
@@ -24,7 +26,9 @@
                 </button>
 
                 <div class="card-body">
-                    <small class="text-muted">{{ $post->published_at->format('F d, Y') }} · {{ $post->reading_time }}</small>
+                    <small class="text-muted">
+                        {{ $post->published_at->format('F d, Y') }} · {{ $post->reading_time }}
+                    </small>
                     <h5 class="mt-2">{{ $post->title }}</h5>
 
                     @if($post->subtitle)
@@ -56,7 +60,6 @@
             <div class="modal-dialog modal-lg">
                 <form action="{{ route('posts.update', $post->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf @method('PUT')
-
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title">Edit: {{ $post->title }}</h5>
@@ -91,10 +94,15 @@
                             </div>
 
                             <div class="mb-2">
-                                <label>Featured Image</label>
-                                <input type="file" name="featured_image" class="form-control">
-                                @if($post->featured_image)
-                                    <small>Current: <a href="{{ asset($post->featured_image) }}" target="_blank">View</a></small>
+                                <label>Upload More Featured Images</label>
+                                <input type="file" name="featured_images[]" class="form-control" accept="image/*" multiple>
+                                @if($post->images->count())
+                                    <div class="mt-2">
+                                        <strong>Current Images:</strong><br>
+                                        @foreach($post->images as $img)
+                                            <img src="{{ asset($img->image_path) }}" class="img-thumbnail me-1 mb-1" style="width: 70px; height: 70px;">
+                                        @endforeach
+                                    </div>
                                 @endif
                             </div>
 
@@ -112,6 +120,7 @@
                 </form>
             </div>
         </div>
+
     @endforeach
 </div>
 @endsection
