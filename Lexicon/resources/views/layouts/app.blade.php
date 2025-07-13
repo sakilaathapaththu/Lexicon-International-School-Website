@@ -9,60 +9,62 @@
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    
-    @yield('styles')
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    @yield('styles')
+    
+    <style>
+        body {
+            padding-top: 70px; /* Add top padding to prevent content from hiding behind the fixed navbar */
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        
+        .dropdown-menu {
+            margin-top: 0;
+        }
+        
+        .dropdown-toggle::after {
+            margin-left: 0.3em;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">
-                <span class="brand-text">LexiCon International School</span>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/') }}">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            About
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{ url('/about') }}">About the School</a></li>
-                            <li><a class="dropdown-item" href="{{ url('/advisory') }}">Advisory Council</a></li>
-                            <li><a class="dropdown-item" href="{{ url('/founder') }}">Founder's Message</a></li>
-                            <li><a class="dropdown-item" href="{{ url('/director') }}">Director's Message</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#programs">Programs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/contact') }}">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#news">News & Updates</a>
-                    </li>
-                </ul>
-                <div class="navbar-actions">
-                    <a href="#apply" class="btn btn-primary navbar-btn">Apply Now</a>
-                </div>
-            </div>
+    <!-- Fixed Navigation Bar -->
+    <nav class="fixed-top bg-white d-flex justify-content-between align-items-center py-3 px-4 shadow-sm" style="max-width: 100%; z-index: 1030;">
+        <div style="font-size: 1.5rem; font-weight: bold; color: #e74c3c;">
+            LexCon International School
         </div>
+        <ul class="d-flex list-unstyled gap-4 mb-0 align-items-center">
+            <li><a href="{{ url('/') }}" class="text-decoration-none text-dark fw-medium">Home</a></li>
+            <li class="dropdown position-relative">
+                <a href="#" class="text-decoration-none text-dark fw-medium dropdown-toggle" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    About
+                </a>
+                <ul class="dropdown-menu shadow-sm" aria-labelledby="aboutDropdown">
+                    <li><a class="dropdown-item py-2" href="{{ url('/about') }}">About the School</a></li>
+                    <li><a class="dropdown-item py-2" href="{{ url('/advisory') }}">Advisory Council</a></li>
+                    <li><a class="dropdown-item py-2" href="{{ url('/about/founders-message') }}">Founder's Message</a></li>
+                    <li><a class="dropdown-item py-2" href="{{ url('/about/directors-message') }}">Director's Message</a></li>
+                </ul>
+            </li>
+            <li><a href="#programs" class="text-decoration-none text-dark fw-medium">Programs</a></li>
+            <li><a href="#contact" class="text-decoration-none text-dark fw-medium">Contact</a></li>
+            <li><a href="#news" class="text-decoration-none text-dark fw-medium">News & Updates</a></li>
+        </ul>
+
     </nav>
 
-    <!-- Main Content Wrapper -->
-    <div class="main-content">
-        @yield('content')
-    </div>
+    @yield('content')
+
+    @yield('scripts')
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -177,12 +179,5 @@
         </div>
     </footer>
 
-    @yield('scripts')
-
-    <!-- Font Awesome for Icons -->
-    <script src="https://kit.fontawesome.com/your-fontawesome-key.js" crossorigin="anonymous"></script>
-    
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
