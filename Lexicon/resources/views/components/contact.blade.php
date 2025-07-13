@@ -16,6 +16,17 @@
 
 <body>
 <!-- Hero Section -->
+
+<section class="hero-section-one">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Connect With Us</h1>
+                <p class="hero-subtitle">We're here to help!</p>
+                <div class="hero-divider"></div>
+            </div>
+        </div>
+</section>
+
 <section class="hero-section position-relative overflow-hidden">
     <div class="hero-bg"></div>
     <div class="container">
@@ -569,6 +580,17 @@ document.addEventListener('DOMContentLoaded', function() {
             input.checked = true;
         }
         
+        // Parallax effect for hero section (subtle)
+        let ticking = false;
+        function updateParallax() {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero-section');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.2}px)`;
+            }
+            ticking = false;
+        }
+
         // Save data on change
         input.addEventListener('change', function() {
             if (this.type === 'radio') {

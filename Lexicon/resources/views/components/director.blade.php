@@ -13,7 +13,17 @@
 </head>
 
     <!-- Hero Section -->
-    <section class="hero-section">
+    <!-- Hero Section -->
+    <section class="hero-section-one">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Lexicon International School Director's Message</h1>
+                <p class="hero-subtitle">A Vision for Educational Excellence</p>
+                <div class="hero-divider"></div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="hero-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 hero-content">
@@ -30,7 +40,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Founder Profile Section -->
     <section class="py-5">
@@ -127,6 +137,17 @@
                 el.style.transitionDelay = `${index * 0.1}s`;
             });
         });
+
+        // Parallax effect for hero section (subtle)
+        let ticking = false;
+        function updateParallax() {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero-section');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.2}px)`;
+            }
+            ticking = false;
+        }
 
         // Parallax effect for hero section
         window.addEventListener('scroll', function() {
