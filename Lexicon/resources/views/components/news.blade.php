@@ -8,13 +8,15 @@
 
     <link href="{{ asset('css/news.css') }}" rel="stylesheet">
 @endsection
+
 @section('content')
+
 <!-- Hero Section -->
 <section class="hero-section">
     <div class="container">
         <div class="hero-content">
-            <h1 class="hero-title">News</h1>
-            <p class="hero-subtitle">Excellence in Educational Leadership & Teaching</p>
+            <h1 class="hero-title">News & Updates</h1>
+            <p class="hero-subtitle">Stay updated with the latest from Lexicon International School</p>
             <div class="hero-divider"></div>
         </div>
     </div>
@@ -22,38 +24,61 @@
 
 <!-- News & Updates Section -->
 <section class="news-updates-section py-5">
-    <div class="container">
-        <div class="section-header text-center mb-4">
-            <h2 class="section-title">News & Updates</h2>
-            <p class="section-subtitle">Stay updated with the latest from Lexicon International School</p>
-            <div class="hero-divider mx-auto"></div>
-        </div>
-
         <div class="row g-4" id="newsGrid">
-            @forelse ($posts as $post)
-                <div class="col-md-6 col-lg-4 news-item">
-                    <div class="card border-0 shadow-sm h-100 news-card">
-                        <div class="news-img-wrapper">
-                            <img src="{{ asset($post->featured_image) }}" alt="{{ $post->title }}" class="card-img-top news-img">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="news-title">{{ \Illuminate\Support\Str::limit($post->title, 70) }}</h5>
-                            <p class="news-snippet text-muted">{{ \Illuminate\Support\Str::limit(strip_tags($post->content), 120) }}</p>
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-                                <small class="text-secondary">{{ \Carbon\Carbon::parse($post->created_at)->format('M d, Y') }}</small>
-                                <a href="{{ url('/posts/'.$post->id) }}" class="btn btn-outline-primary btn-sm">Read More</a>
-                            </div>
+            <!-- News Card 1 -->
+            <div class="col-md-6 col-lg-4 news-item">
+                <div class="card border-0 shadow-sm h-100 news-card">
+                    <div class="news-img-wrapper">
+                        <img src="images/hero-bg1.jpg" alt="News Title" class="card-img-top news-img">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="news-title">New Campus Opening in Colombo</h5>
+                        <p class="news-snippet text-muted">We are thrilled to announce the launch of our newest campus offering world-class facilities and academic excellence.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-secondary">July 12, 2025</small>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
                         </div>
                     </div>
                 </div>
-            @empty
-                <p class="text-muted text-center">No recent news available.</p>
-            @endforelse
+            </div>
+
+            <!-- News Card 2 -->
+            <div class="col-md-6 col-lg-4 news-item">
+                <div class="card border-0 shadow-sm h-100 news-card">
+                    <div class="news-img-wrapper">
+                        <img src="images/hero-bg2.jpg" alt="News Title" class="card-img-top news-img">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="news-title">Student Achievements 2025</h5>
+                        <p class="news-snippet text-muted">Our students excelled in national and international competitions, showcasing their talents and dedication to excellence.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-secondary">June 30, 2025</small>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Card 3 -->
+            <div class="col-md-6 col-lg-4 news-item">
+                <div class="card border-0 shadow-sm h-100 news-card">
+                    <div class="news-img-wrapper">
+                        <img src="images/hero-bg3.jpg" alt="News Title" class="card-img-top news-img">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="news-title">Lexicon Hosts International Educators</h5>
+                        <p class="news-snippet text-muted">Educators from around the globe joined us for a conference on modern teaching methods and inclusive education.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-secondary">June 18, 2025</small>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more news cards as needed -->
         </div>
 
-        <div class="text-center mt-4">
-            <a href="{{ url('/posts') }}" class="btn btn-primary btn-sm">View All News</a>
-        </div>
     </div>
 </section>
 

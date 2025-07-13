@@ -43,6 +43,10 @@ Route::get('/admissions', function () {
 Route::get('/gallery', function () {
     return view('components.gallery');
 });
+Route::get('/news', function () {
+    return view('components.news');
+});
+
 
 // Admin Login Routes (public)
 Route::get('/admin/login', [AdminLoginController::class, 'showLoginForm'])->name('admin.login');
