@@ -74,6 +74,27 @@
             border-radius: 2px;
             animation: expandWidth 1s ease-out 0.5s both;
         }
+        /* Optional Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes expandWidth {
+            from {
+                width: 0;
+            }
+            to {
+                width: 80px;
+            }
+        }
+
 
 
     .job-card {
