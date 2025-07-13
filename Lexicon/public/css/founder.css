@@ -228,6 +228,10 @@
             transform: translateX(0);
         }
 
+        .text-primary {
+        color: var(--cool-blue) !important;
+        }
+
         @media (max-width: 768px) {
             .section-title {
                 font-size: 2rem;
