@@ -69,40 +69,24 @@
                 flex-wrap: wrap;
                 gap: 20px;
             }
-
-            .filter-btn {
-                background: transparent;
-                border: none;
-                padding: 10px 20px;
-                font-size: 14px;
-                font-weight: 600;
-                color: #666;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                position: relative;
+            .modal-body {
+            
+                padding: 0 !important;
+                border-radius: 0;
             }
 
-            .filter-btn::after {
-                content: '';
-                position: absolute;
-                bottom: -5px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 0;
-                height: 2px;
-                background: #007bff;
-                transition: width 0.3s ease;
+            .btn-close-white {
+                filter: invert(1);
             }
 
-            .filter-btn.active,
-            .filter-btn:hover {
-                color: #007bff;
+            .modal-body {
+                padding: 0 !important;
+            }
+            .modal-backdrop.show {
+                backdrop-filter: blur(100px);
+                background-color: rgba(48, 48, 48, 0.415); /* Optional: semi-dark overlay */
             }
 
-            .filter-btn.active::after,
-            .filter-btn:hover::after {
-                width: 100%;
-            }
 
             /* Gallery Grid */
             .gallery-grid {
@@ -133,9 +117,10 @@
                 box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
             }
 
-            .gallery-image {
-                position: relative;
-                overflow: hidden;
+            .gallery-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
             }
 
             .gallery-image img {
