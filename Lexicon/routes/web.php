@@ -38,6 +38,9 @@ Route::get('/advisory', function () {
 Route::get('/founder', function () {
     return view('components.founder');
 });
+Route::get('/admissions', function () {
+    return view('components.admissions');
+});
 
 Route::get('/director', function () {
     return view('components.director');
