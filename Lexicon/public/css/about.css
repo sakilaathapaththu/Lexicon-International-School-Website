@@ -542,6 +542,22 @@ html {
     background: linear-gradient(135deg, rgba(33, 150, 243, 0.9), rgba(25, 118, 210, 0.9)) !important;
 }
 
+        @keyframes fadeInUp {
+        from {
+        opacity: 0;
+        transform: translateY(30px);
+        }
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }
+        }
+
+        @keyframes expandWidth {
+            from { width: 0; }
+            to { width: 80px; }
+        }
+
 @media (max-width: 768px) {
     .story-modal .modal-dialog {
         margin: 1rem;
