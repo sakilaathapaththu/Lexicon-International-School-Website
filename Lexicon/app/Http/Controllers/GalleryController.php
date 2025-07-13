@@ -51,5 +51,12 @@ class GalleryController extends Controller
 
 
 
+    public function showAllForFrontend()
+{
+    $groupedImages = \App\Models\Gallery::latest()->get()->groupBy('title');
+    return view('components.gallery', compact('groupedImages'));
+}
+
+
 
 }
