@@ -51,7 +51,9 @@ Route::get('/news', function () {
 Route::get('/gallery', function () {
     return view('components.gallery');
 });
-
+Route::get('/careers', function () {
+    return view('components.career');
+});
 
 // Add Contact Routes
 Route::get('/contact', function () {
