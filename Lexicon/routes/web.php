@@ -48,6 +48,9 @@ Route::get('/director', function () {
 Route::get('/news', function () {
     return view('components.news');
 });
+Route::get('/gallery', function () {
+    return view('components.gallery');
+});
 
 
 // Add Contact Routes
