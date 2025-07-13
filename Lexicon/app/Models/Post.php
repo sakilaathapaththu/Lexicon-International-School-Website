@@ -7,16 +7,11 @@ use App\Models\Admin;
 class Post extends Model
 {
     protected $fillable = [
-        'title',
-        'subtitle',
-        'slug',
-        'published_at',
-        'reading_time',
-        'content',
-        'featured_image',
-        'tags',
-        'author_id',
-    ];
+    'type', 'title', 'subtitle', 'slug', 'published_at',
+    'reading_time', 'content', 'tags', 'featured_image',
+    'author_display', 'author_id'
+];
+
 
     protected $casts = [
         'published_at' => 'datetime',
@@ -31,4 +26,10 @@ class Post extends Model
     {
         return explode(',', $this->tags);
     }
+    // Post.php
+public function images()
+{
+    return $this->hasMany(\App\Models\PostImage::class, 'post_id');
+}
+
 }
