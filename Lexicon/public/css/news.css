@@ -1,77 +1,80 @@
 :root {
-            --seashell-white: #FFF8F0;
-            --light-blue: #E8F4FD;
-            --cool-blue: #2196F3;
-            --dark-blue: #1976D2;
-            --text-primary: #1A1A1A;
-            --text-secondary: #6B7280;
-            --border-color: #E5E7EB;
-        }
-        /* Hero Section */
-            .hero-section {
-                background: linear-gradient(135deg, var(--cool-blue) 0%, var(--dark-blue) 100%);
-                color: white;
-                padding: 50px 0 50px;
-                position: relative;
-                overflow: hidden;
-            }
+    --seashell-white: #FFF8F0;
+    --light-blue: #E8F4FD;
+    --cool-blue: #2196F3;
+    --dark-blue: #1976D2;
+    --text-primary: #1A1A1A;
+    --text-secondary: #6B7280;
+    --border-color: #E5E7EB;
+}
 
-            .hero-section::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'><polygon fill='rgba(255,255,255,0.05)' points='0,0 1000,300 1000,1000 0,700'/></svg>");
-                background-size: cover;
-            }
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--cool-blue) 0%, var(--dark-blue) 100%);
+    color: white;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
 
-            .hero-content {
-                position: relative;
-                z-index: 2;
-                text-align: center;
-                animation: fadeInUp 1s ease-out;
-            }
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'><polygon fill='rgba(255,255,255,0.05)' points='0,0 1000,300 1000,1000 0,700'/></svg>");
+    background-size: cover;
+    z-index: 1;
+}
 
-            .hero-title {
-                font-size: 3.5rem;
-                font-weight: 700;
-                margin-bottom: 1rem;
-                letter-spacing: -0.02em;
-            }
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+}
 
-            .hero-subtitle {
-                font-size: 1.3rem;
-                font-weight: 300;
-                opacity: 0.9;
-                max-width: 600px;
-                margin: 0 auto;
-            }
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
 
-            .hero-divider {
-                width: 80px;
-                height: 4px;
-                background: var(--seashell-white);
-                margin: 2rem auto;
-                border-radius: 2px;
-                animation: expandWidth 1s ease-out 0.5s both;
-            }
+.hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-divider {
+    width: 80px;
+    height: 4px;
+    background: var(--seashell-white);
+    margin: 2rem auto 0;
+    border-radius: 2px;
+    animation: expandWidth 1s ease-out 0.5s both;
+}
 
 /* News & Updates Section */
 .news-updates-section {
     background-color: #f9f9f9;
 }
 
+.section-header {
+    text-align: center;
+}
+
 .section-header .section-title {
     font-weight: 700;
     font-size: 2rem;
-    color: #1a1a1a;
+    color: var(--text-primary);
 }
 
 .section-header .section-subtitle {
     font-size: 1rem;
-    color: #666;
+    color: var(--text-secondary);
     margin-bottom: 10px;
 }
 
@@ -105,21 +108,32 @@
 .news-title {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #222;
+    color: var(--text-primary);
     margin-bottom: 0.5rem;
 }
 
 .news-snippet {
     font-size: 0.95rem;
-    color: #555;
+    color: var(--text-secondary);
 }
 
-.hero-divider {
-    width: 60px;
-    height: 4px;
-    background: #007bff;
-    margin-top: 10px;
-    border-radius: 2px;
+/* Optional Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-
+@keyframes expandWidth {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80px;
+    }
+}
