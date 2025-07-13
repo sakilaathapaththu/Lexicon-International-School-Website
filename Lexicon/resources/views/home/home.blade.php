@@ -4,9 +4,8 @@
 
 @section('content')
 
-
     <!-- Hero Section -->
-    <section class="hero text-white py-5" id="home">
+    <section class="hero text-white py-5" id="home" data-aos="fade-in">
         <div class="hero-slider">
             <div class="hero-slide active" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}')"></div>
             <div class="hero-slide" style="background-image: url('{{ asset('images/hero-bg2.jpg') }}')"></div>
@@ -31,19 +30,20 @@
             <span class="hero-dot" data-slide="3"></span>
         </div>
     </section>
+
      <!-- General -->
     <section>
-    <div class="general-container">
+    <div class="general-container" data-aos="fade-up">
         <div class="row-g">
         <!-- Left side (light background with heading) -->
-        <div class="left-side">
+        <div class="left-side" data-aos="fade-right">
             <h1>
             LexCon is the largest network of International Schools in Sri Lanka with over 25,000+ students and over 3,300+ teachers in total and growing!
             </h1>
         </div>
         
         <!-- Right side (dark background with text) -->
-        <div class="right-side">
+        <div class="right-side" data-aos="fade-left">
             <p>At LexCon International School you can:</p>
             <ul>
             <li>Learn from skilled and talented teachers.</li>
@@ -58,10 +58,9 @@
         </div>
     </div>
     </section>
-
     
     <!-- About Section With Background Image -->
-    <section class="about-LexCon-section position-relative text-white" style="background-image: url('{{ asset('images/about-lexcon.jpg') }}'); background-size: cover; background-position: center; min-height:150px;">
+    <section class="about-LexCon-section position-relative text-white" style="background-image: url('{{ asset('images/about-lexcon.jpg') }}'); background-size: cover; background-position: center; min-height:150px;" data-aos="fade-right">
         <!-- Dark Overlay -->
         <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.4);"></div>
 
@@ -79,8 +78,9 @@
             </div>
         </div>
     </section>
+
     <!-- Our Mission Section -->
-    <section class="about-us-section py-5" id="about">
+    <section class="about-us-section py-5" id="about" data-aos="fade-up">
         <div class="container">
                       <div class="section-title">
                 <h2>Our Mission</h2>
@@ -128,11 +128,11 @@
     </section> -->
 
     <!-- Impact Section -->
-    <section class="impact py-5 bg-light">
+    <section class="impact py-5 bg-light" data-aos="zoom-in-up">
         <div class="container">
-                        <div class="section-title">
+            <div class="section-title">
                 <h2>Our Impact</h2>
-                <p>NMaking a difference in education and student lives worldwide</p>
+                <p>Making a difference in education and student lives worldwide</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-4">
@@ -167,7 +167,7 @@
     <section class="programs py-5" id="programs">
         <div class="container">
             <div class="row mb-4">
-                <div class="col-lg-8 mx-auto text-center">
+                <div class="col-lg-8 mx-auto text-center" data-aos="flip-left">
                     <div class="section-title">
                         <h2>Academic Programs</h2>
                         <p>Advanced curriculum preparing students for higher education. Specialized programs for university preparation. Foundation learning with focus on core subjects and character development
@@ -179,8 +179,8 @@
 
             <div class="row g-4">
                 <!-- Primary Education - Big Box -->
-                <div class="col-lg-8">
-                    <div class="program-card h-100">
+                <div class="col-lg-8" data-aos="flip-left">
+                    <div class="program-card h-100" >
                         <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
                         <div class="program-overlay red-overlay">
                             <div class="program-content" style="color: white;">
@@ -194,7 +194,7 @@
                 </div>
 
                 <!-- Secondary Education - Small Box Right -->
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="flip-right">
                     <div class="program-card h-100">
                         <div class="program-bg secondary-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
                         <div class="program-overlay blue-overlay">
@@ -215,7 +215,7 @@
                 </div>
 
                 <!-- Advanced Level (Left Small Box) -->
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-left">
                     <div class="program-card h-100">
                         <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
                         <div class="program-overlay dark-overlay">
@@ -236,7 +236,7 @@
                 </div>
 
                 <!-- Advanced Level (Right Small Box) -->
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-right">
                     <div class="program-card h-100">
                         <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg2.jpg') }}');"></div>
                         <div class="program-overlay orange-overlay">
@@ -259,10 +259,9 @@
             </div>
         </div>
     </section>
-
-    <!-- News Cards -->
-   
-<section class="news-updates py-5">
+    
+<!-- News Cards -->
+<section class="news-updates py-5"data-aos="fade-up" >
     <div class="container">
         <div class="row mb-4">
             <div class="section-title">
@@ -273,7 +272,7 @@
 
         <div class="row g-4">
             @forelse ($posts as $post)
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
                     <div class="card shadow-sm border-0 news-card">
                         <div class="card-img-container">
                             <img src="{{ asset($post->featured_image) }}" class="card-img-top" alt="News Image">
@@ -299,7 +298,7 @@
     
 
 <!-- Gallery Section -->
-<section class="photo-gallery py-5 bg-light" id="gallery">
+<section class="photo-gallery py-5 bg-light" id="gallery"data-aos="fade-up" >
     <div class="container">
         <div class="section-title text-center mb-4">
             <h2>Gallery</h2>
@@ -361,6 +360,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
      <!-- Custom Home Page Styles -->
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
     
 
 @endsection
@@ -371,5 +372,19 @@
     
     <!-- Custom Home Page Scripts -->
     <script src="{{ asset('js/home.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: false,
+        mirror: true,
+    });
+
+    // Optional safety net to refresh AOS every scroll
+    window.addEventListener('scroll', function () {
+        AOS.refresh();
+    });
+</script>
     
 @endsection
