@@ -184,7 +184,7 @@
                         <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
                         <div class="program-overlay red-overlay">
                             <div class="program-content" style="color: white;">
-                                <div class="program-number">1</div>
+                                <!-- <div class="program-number">1</div> -->
                                 <h3 class="program-title">Primary Education</h3>
                                 <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
                                 <a href="#" class="btn btn-warning btn-sm">Read more</a>
@@ -199,7 +199,7 @@
                         <div class="program-bg secondary-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
                         <div class="program-overlay blue-overlay">
                             <div class="program-content" style="color: white;">
-                                <div class="program-number">2</div>
+                                <!-- <div class="program-number">2</div> -->
                                 <h3 class="program-title">Secondary Education</h3>
                                 <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
                                 <ul class="program-features">
@@ -220,7 +220,7 @@
                         <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg1.jpg') }}');"></div>
                         <div class="program-overlay dark-overlay">
                             <div class="program-content" style="color: white;">
-                                <div class="program-number">3</div>
+                                <!-- <div class="program-number">3</div> -->
                                 <h3 class="program-title">Advanced Level</h3>
                                 <p class="program-subtitle">Foundation learning with focus on core subjects and character development</p>
                                 <ul class="program-features">
@@ -241,7 +241,7 @@
                         <div class="program-bg" style="background-image: url('{{ asset('images/hero-bg2.jpg') }}');"></div>
                         <div class="program-overlay orange-overlay">
                             <div class="program-content" style="color: white;">
-                                <div class="program-number">4</div>
+                                <!-- <div class="program-number">4</div> -->
                                 <h3 class="program-title">Advanced Level</h3>
                                 <p class="program-subtitle">Specialized training with focus on advanced concepts and practical applications</p>
                                 <ul class="program-features">

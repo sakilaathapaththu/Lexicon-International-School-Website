@@ -475,3 +475,17 @@
     float: left;
 }
 
+/* Animation initial state */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+
+/* Animation active state */
+.animate-on-scroll.animate-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
