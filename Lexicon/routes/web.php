@@ -10,6 +10,7 @@ use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ContactController; // Add this import
 use App\Http\Controllers\HomeController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,9 +50,8 @@ Route::get('/news', function () {
     return view('components.news');
 });
 
-Route::get('/careers', function () {
-    return view('components.career');
-});
+Route::get('/careers', [CareerController::class, 'showFrontend'])->name('careers.frontend');
+
 
 
 
