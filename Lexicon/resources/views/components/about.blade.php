@@ -14,26 +14,12 @@
 </head>
 <body>
 
-<!-- Breadcrumb -->
-<nav aria-label="breadcrumb" class="bg-light py-2 px-3 rounded mb-4">
-    <ol class="breadcrumb mb-0">
-        <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">About the School</li>
-    </ol>
-</nav>
-
 <!-- Hero Section -->
     <section class="bg-primary text-white py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-8">
                     <h1 class="display-4 fw-bold mb-3">About Lexicon International School</h1>
-                    <p class="lead mb-4">Shaping tomorrow's leaders through innovative education, global perspectives, and unwavering commitment to excellence.</p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <span class="badge bg-light text-primary fs-6 px-3 py-2 rounded-pill">Est. 2010</span>
-                        <span class="badge bg-light text-primary fs-6 px-3 py-2 rounded-pill">International Curriculum</span>
-                        <span class="badge bg-light text-primary fs-6 px-3 py-2 rounded-pill">Global Community</span>
-                    </div>
                 </div>
                 <div class="col-lg-4 text-center">
                     <div class="icon-circle-lg bg-white d-inline-flex align-items-center justify-content-center rounded-circle" data-aos="zoom-in" data-aos-delay="200">
