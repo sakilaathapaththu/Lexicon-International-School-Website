@@ -22,6 +22,7 @@
 
     
     <!-- Modern Navbar -->
+
 <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm bg-white" id="mainNavbar">
     <div class="container">
         <a class="navbar-brand fw-bold text-primary" href="{{ url('/') }}">
@@ -33,8 +34,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto"> <!-- 👈 Right aligned -->
                 <li class="nav-item">
                     <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" href="{{ url('/') }}">Home</a>
                 </li>
@@ -49,9 +50,6 @@
                         <li><a class="dropdown-item" href="{{ url('/director') }}">Director's Message</a></li>
                     </ul>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#programs">Programs</a>
-                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('/news') }}">News & Blog</a>
                 </li>
@@ -66,10 +64,9 @@
                 </li>
             </ul>
 
-            <div class="d-flex">
-                <!-- <a href="{{ url('/admissions') }}" class="btn btn-primary rounded-pill px-4 shadow-sm">
-                    Apply Now
-                </a> -->
+            <div class="d-none d-lg-block ms-3">
+                <!-- Optional Apply Now button -->
+                <!-- <a href="{{ url('/admissions') }}" class="btn btn-primary rounded-pill px-4 shadow-sm">Apply Now</a> -->
             </div>
         </div>
     </div>
