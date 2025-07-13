@@ -13,14 +13,6 @@
 </head>
 <body>
 
-<!-- Breadcrumb -->
-<nav aria-label="breadcrumb" class="bg-light py-2 px-3 rounded mb-4">
-    <ol class="breadcrumb mb-0">
-        <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Advisory Council</li>
-    </ol>
-</nav>
-
 <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
