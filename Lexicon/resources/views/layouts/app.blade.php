@@ -49,7 +49,7 @@
                         <a class="nav-link" href="{{ url('/contact') }}">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#news">News & Updates</a>
+                        <a class="nav-link" href="{{ url('/news') }}">News & Updates</a>
                     </li>
                 </ul>
                 <div class="navbar-actions">

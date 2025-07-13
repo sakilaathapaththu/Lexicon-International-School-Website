@@ -89,5 +89,12 @@ class CareerController extends Controller
         return redirect()->route('careers.index')->with('success', 'Career updated successfully.');
     }
 
+public function showFrontend()
+{
+    $careers = \App\Models\Career::whereDate('deadline', '>=', now())
+        ->orderBy('created_at', 'desc')
+        ->get();
+    return view('components.career', compact('careers'));
+}
 
 }

@@ -5,9 +5,9 @@
 @section('styles')
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
     <link href="{{ asset('css/gallery.css') }}" rel="stylesheet">
 @endsection
+
 @section('content')
 <!-- Hero Section -->
 <section class="hero-section">
@@ -38,182 +38,65 @@
 <section class="gallery-grid">
     <div class="container">
         <div class="masonry-grid" id="galleryGrid">
-            <!-- Gallery Item 1 -->
-            <div class="gallery-item" data-category="photography travel">
-                <div class="gallery-image">
-                    <img src="images/hero-bg2.jpg" alt="Mountain Landscape">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h3 class="gallery-title">Mountain Adventure</h3>
-                            <p class="gallery-category">Photography • Travel</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    @forelse ($groupedImages as $title => $images)
+        @php
+            $firstImage = $images->first();
+            $slug = \Illuminate\Support\Str::slug($title ?? 'gallery-group');
+        @endphp
 
-            <!-- Gallery Item 2 -->
-            <div class="gallery-item" data-category="nature">
-                <div class="gallery-image">
-                    <img src="images/hero-bg2.jpg" alt="Geometric Design">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h3 class="gallery-title">Geometric Patterns</h3>
-                            <p class="gallery-category">Nature • Design</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallery Item 3 -->
-            <div class="gallery-item" data-category="lifestyle">
-                <div class="gallery-image">
-                    <img src="images/hero-bg2.jpg" alt="Culinary Art">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h3 class="gallery-title">Culinary Masterpiece</h3>
-                            <p class="gallery-category">Life Style • Food</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallery Item 4 -->
-            <div class="gallery-item" data-category="fashion">
-                <div class="gallery-image">
-                    <img src="images/hero-bg2.jpg" alt="Fashion Portrait">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h3 class="gallery-title">Fashion Portrait</h3>
-                            <p class="gallery-category">Fashion • Photography</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallery Item 5 -->
-            <div class="gallery-item" data-category="photography">
-                <div class="gallery-image">
-                    <img src="images/hero-bg2.jpg" alt="Abstract Art">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h3 class="gallery-title">Abstract Creativity</h3>
-                            <p class="gallery-category">Photography • Art</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallery Item 6 -->
-            <div class="gallery-item" data-category="lifestyle">
-                <div class="gallery-image">
-                    <img src="images/hero-bg2.jpg" alt="Connection">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h3 class="gallery-title">Human Connection</h3>
-                            <p class="gallery-category">Life Style • Emotion</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallery Item 7 -->
-            <div class="gallery-item" data-category="nature">
-                <div class="gallery-image">
-                    <img src="images/hero-bg2.jpg" alt="Pet Photography">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h3 class="gallery-title">Pet Companion</h3>
-                            <p class="gallery-category">Nature • Photography</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallery Item 8 -->
-            <div class="gallery-item" data-category="lifestyle">
-                <div class="gallery-image">
-                    <img src="images/hero-bg2.jpg" alt="Coffee Culture">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h3 class="gallery-title">Coffee Culture</h3>
-                            <p class="gallery-category">Life Style • Food</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallery Item 9 -->
-            <div class="gallery-item" data-category="photography">
-                <div class="gallery-image">
-                    <img src="images/hero-bg2.jpg" alt="Artistic Expression">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h3 class="gallery-title">Artistic Expression</h3>
-                            <p class="gallery-category">Photography • Art</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallery Item 10 -->
-            <div class="gallery-item" data-category="travel">
-                <div class="gallery-image">
-                    <img src="images/hero-bg2.jpg" alt="Body Art">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h3 class="gallery-title">Body Art Expression</h3>
-                            <p class="gallery-category">Travel • Culture</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallery Item 11 -->
-            <div class="gallery-item" data-category="travel">
-                <div class="gallery-image">
-                    <img src="images/hero-bg2.jpg" alt="Automotive">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h3 class="gallery-title">Automotive Beauty</h3>
-                            <p class="gallery-category">Travel • Photography</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallery Item 12 -->
-            <div class="gallery-item" data-category="lifestyle">
-                <div class="gallery-image">
-                    <img src="images/hero-bg2.jpg" alt="Gentle Touch">
-                    <div class="gallery-overlay">
-                        <div class="gallery-content">
-                            <h3 class="gallery-title">Gentle Moments</h3>
-                            <p class="gallery-category">Life Style • Emotion</p>
-                        </div>
+        <div class="gallery-item" data-category="{{ strtolower($firstImage->description ?? 'photography') }}">
+            <div class="gallery-image" data-bs-toggle="modal" data-bs-target="#modal-{{ $slug }}">
+                <img src="{{ asset($firstImage->image_path) }}" alt="{{ $title }}">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">{{ $title ?? 'Untitled' }}</h3>
+                        <p class="gallery-category">{{ $firstImage->description ?? 'Gallery' }}</p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Modal for this group -->
+        <div class="modal fade" id="modal-{{ $slug }}" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title text-white">{{ $title ?? 'Gallery Group' }}</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex flex-wrap gap-3 justify-content-center">
+                        @foreach ($images as $img)
+                            <img src="{{ asset($img->image_path) }}" alt="Grouped Image" class="img-fluid rounded" style="max-height: 300px;">
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    @empty
+        <p class="text-center text-muted">No gallery images available.</p>
+    @endforelse
+</div>
+
     </div>
 </section>
-
-
 @endsection
+
 @section('scripts')
+<!-- At end of body -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const filterBtns = document.querySelectorAll('.filter-btn');
     const galleryItems = document.querySelectorAll('.gallery-item');
-    
+
     filterBtns.forEach(btn => {
         btn.addEventListener('click', function() {
-            // Remove active class from all buttons
             filterBtns.forEach(b => b.classList.remove('active'));
-            // Add active class to clicked button
             this.classList.add('active');
-            
+
             const filterValue = this.getAttribute('data-filter');
-            
+
             galleryItems.forEach(item => {
                 if (filterValue === 'all' || item.getAttribute('data-category').includes(filterValue)) {
                     item.style.display = 'block';

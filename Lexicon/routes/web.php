@@ -10,6 +10,7 @@ use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ContactController; // Add this import
 use App\Http\Controllers\HomeController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,10 +39,26 @@ Route::get('/advisory', function () {
 Route::get('/founder', function () {
     return view('components.founder');
 });
+Route::get('/admissions', function () {
+    return view('components.admissions');
+});
 
 Route::get('/director', function () {
     return view('components.director');
 });
+Route::get('/news', function () {
+    return view('components.news');
+});
+
+Route::get('/careers', [CareerController::class, 'showFrontend'])->name('careers.frontend');
+
+
+
+
+Route::get('/gallery', [GalleryController::class, 'showAllForFrontend'])->name('gallery.front');
+
+
+
 
 // Add Contact Routes
 Route::get('/contact', function () {
