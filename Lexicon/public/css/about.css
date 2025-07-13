@@ -13,6 +13,57 @@
     --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
+.hero-section {
+            background: linear-gradient(135deg, var(--cool-blue) 0%, var(--dark-blue) 100%);
+            color: white;
+            padding: 40px 0 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.05)" points="0,0 1000,300 1000,1000 0,700"/></svg>');
+            background-size: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            font-weight: 300;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero-divider {
+            width: 80px;
+            height: 4px;
+            background: white;
+            margin: 2rem auto;
+            border-radius: 2px;
+            animation: expandWidth 1s ease-out 0.5s both;
+        }
+
+
 /* === HOVER EFFECTS === */
 .hover-lift {
     transition: transform 0.3s ease, box-shadow 0.3s ease;

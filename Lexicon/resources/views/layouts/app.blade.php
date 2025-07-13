@@ -49,9 +49,9 @@
                         <li><a class="dropdown-item" href="{{ url('/director') }}">Director's Message</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#programs">Programs</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('/news') }}">News & Blog</a>
                 </li>
@@ -67,9 +67,9 @@
             </ul>
 
             <div class="d-flex">
-                <a href="{{ url('/admissions') }}" class="btn btn-primary rounded-pill px-4 shadow-sm">
+                <!-- <a href="{{ url('/admissions') }}" class="btn btn-primary rounded-pill px-4 shadow-sm">
                     Apply Now
-                </a>
+                </a> -->
             </div>
         </div>
     </div>

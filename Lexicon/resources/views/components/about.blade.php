@@ -15,17 +15,14 @@
 <body>
 
 <!-- Hero Section -->
-    <section class="bg-primary text-white py-5">
+   
+    <section class="hero-section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <h1 class="display-4 fw-bold mb-3">About Lexicon International School</h1>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <div class="icon-circle-lg bg-white d-inline-flex align-items-center justify-content-center rounded-circle" data-aos="zoom-in" data-aos-delay="200">
-                        <i class="fas fa-graduation-cap text-primary fs-1"></i>
-                    </div>
-                </div>
+            <div class="hero-content">
+                <h1 class="hero-title">About </h1>
+                 <h1 class="hero-title">Lexicon International School</h1>
+                <!-- <p class="hero-subtitle">Lexicon International School</p> -->
+                <div class="hero-divider"></div>
             </div>
         </div>
     </section>
